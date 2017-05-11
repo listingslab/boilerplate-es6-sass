@@ -1,5 +1,6 @@
-## Boilerplate MVC Application using ES6
+## Boilerplate MVC Application with ES6
 
+Quickly get up and running with an ES6 MVC Application. 
 
 ### Install
 ```
