@@ -1,0 +1,24 @@
+{
+  "name": "boilerplate-es6-mvc",
+  "version": "1.0.1",
+  "description": "Quickly get up and running with an ES6 MVC Application",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listingslab/boilerplate-es6-mvc.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "ES6",
+    "MVC"
+  ],
+  "author": "listingslab",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  }
+}

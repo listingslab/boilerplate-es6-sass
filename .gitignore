@@ -1,2 +1,8 @@
+# For more info on .gitignore see https://help.github.com/articles/ignoring-files/
 
+node_modules
+
+# Ignore JetBrains folder
 \.idea/
+
+
