@@ -7,6 +7,7 @@ import Model from './Model';
 import View from './View';
 import Controller from './Controller';
 
+
 export default class App {
   constructor() {
 
@@ -26,4 +27,6 @@ export default class App {
   }
 }
 
-const app = new App();
+console.log('All good innit?');
+new App();
+
