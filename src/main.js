@@ -27,6 +27,4 @@ export default class App {
   }
 }
 
-console.log('All good innit?');
 new App();
-

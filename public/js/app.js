@@ -155,7 +155,6 @@ var App = function App() {
 exports.default = App;
 
 
-console.log('All good innit?');
 new App();
 
 },{"./Controller":1,"./Model":2,"./View":3}]},{},[4]);

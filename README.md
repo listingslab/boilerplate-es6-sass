@@ -12,5 +12,6 @@ Model–view–controller (MVC) is a software architectural pattern for implemen
 Use your preferred command line application to change directory to your working folder and run the following commands.
 ```
 git clone https://github.com/listingslab/boilerplate-es6-mvc.git
+cd boilerplate-es6-mvc
 sudo npm install
 ```
