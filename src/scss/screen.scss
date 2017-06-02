@@ -18,7 +18,65 @@
  * Main Sass entry point
  *
  */
+@import 'normalize';
+@import 'mixins/fontface';
+@include fontFace('AvantGarde','../fonts/itc_avant_garde_gothic_book-webfont');
 
-body {
+#app{
+  margin: 25px;
+  footer{
+    margin-top: 50px;
+    text-align: center;
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+  }
+}
+
+#model{
+  border: 1px solid #ddd;
   background: #eee;
+  padding: 5px;
+  textarea{
+    width: 98%;
+    height: 200px;
+  }
+}
+
+
+#view{
+  border: 1px solid #ddd;
+  background: #eee;
+  padding: 5px;
+}
+
+
+#controller{
+  border: 1px solid #ddd;
+  background: #eee;
+  padding: 5px;
+}
+
+.layout,
+.layout-app {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-model {
+  order: -1;
+}
+
+@media (min-width: 992px) {
+  .layout-app {
+    flex-direction: row;
+    flex: 1;
+  }
+  .layout-content {
+    flex: 1;
+  }
+  .layout-model, .layout-controller {
+    flex: 0 0 350px;
+  }
 }

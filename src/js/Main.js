@@ -29,7 +29,6 @@ export default class Main {
 
     // Instantiate MVC Classes
     // See http://stackoverflow.com/questions/43838136/instantiate-and-use-2-or-more-javascript-es6-classes
-
     this.m = new Model();
     this.v = new View();
     this.c = new Controller();
@@ -41,7 +40,6 @@ export default class Main {
     this.c.setDependents(dependents);
 
   }
-
 
 }
 

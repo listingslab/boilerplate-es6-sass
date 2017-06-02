@@ -2,9 +2,15 @@
 
 ## Boilerplate for JavaScript ES6 MVC Application using Sass
 
-Quickly get up and running with an JavaScript [ES6](https://es6.io) MVC Application and [Sass](http://sass-lang.com) styling. Uses [Gulp](http://gulpjs.com/) and [Babel](https://babeljs.io) to transpile the source code into browser-ready JavaScript and CSS but you can easily adapt it to your own workflow.
+Quickly get up and running with an JavaScript [ES6](https://es6.io) MVC Application and [Sass](http://sass-lang.com) styling. It uses [Gulp](http://gulpjs.com/) and [Babel](https://babeljs.io) as simply as possible to transpile the source code into browser-ready JavaScript and CSS but you can easily adapt it to your own workflow.
 
-#### Install & Usage
+#### What does it give you
+
+- Sass file structure ready to use
+- Example ES6 application you can extend
+- Holy grail 3 column flexbox layout
+
+#### How to install & use
 Use your preferred command line application to change directory to your working folder and run the following commands.
 
 ```
