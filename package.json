@@ -11,9 +11,9 @@
     "url": "git+https://github.com/listingslab/boilerplate-es6-sass.git"
   },
   "author": {
-    "name" : "Chris Dorward",
-    "email" : "listingslab@gmail.com",
-    "url" : "http://listingslab.com"
+    "name": "Chris Dorward",
+    "email": "listingslab@gmail.com",
+    "url": "http://listingslab.com"
   },
   "license": "OSL-3.0",
   "devDependencies": {
@@ -23,6 +23,8 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^2.1.2",
     "vinyl-buffer": "^1.0.0",

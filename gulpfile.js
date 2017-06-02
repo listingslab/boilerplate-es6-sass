@@ -24,19 +24,22 @@ const babelify = require('babelify');
 const browserify = require('browserify');
 const connect = require('gulp-connect');
 const notify = require("gulp-notify");
+const sass = require('gulp-sass');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const sourcemaps = require('gulp-sourcemaps');
+const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 
 gulp.task('default',['init']);
 
-// Start watching src/js/ & src/scss files for changes
-gulp.task('init', ['js'], function() {
-    gulp.watch('src/**/*.js', ['js']);
+// Watch src/js & src/scss directories for changes
+gulp.task('init', ['js', 'css'], function() {
+  gulp.watch('src/**/*.js', ['js']);
+  gulp.watch('src/**/*.scss', ['css']);
 });
 
-// Transpile and minify ES6 JavaScript into ES5 with & copy to build/js with sourcemap
+// Transpile & minify JavaScript & copy to build/js/app.js with sourcemap
 gulp.task('js', function(){
   return browserify({
     debug: true,
@@ -57,3 +60,15 @@ gulp.task('js', function(){
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./build/js'))
 });
+
+// Preprocess sass into CSS & copy to build/css/styles.css with sourcemap
+gulp.task('css', () => gulp.src('src/scss/*.scss')
+  .pipe(sourcemaps.init())
+  .pipe(sass({source: 'styles.js'}))
+  .on("error", notify.onError(function (error) {
+    return "Error: " + error.message;
+  }))
+  .pipe(rename('styles.css'))
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest('build/css'))
+);
