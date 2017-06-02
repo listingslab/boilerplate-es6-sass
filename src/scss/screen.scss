@@ -14,20 +14,7 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/js/Controller.js
- * Handles anything to do with user interaction
+ * src/scss/screen.scss
+ * Main Sass entry point
  *
  */
-
-export default class Controller {
-  constructor() {
-    this.shortName = 'ui';
-  }
-
-  setDependents(dependents) {
-    for (let i=0; i<dependents.length; i++){
-      this[dependents[i].shortName] = dependents[i];
-    }
-  }
-
-}

@@ -5,4 +5,4 @@ node_modules
 # Ignore JetBrains folder
 \.idea/
 
-
+src/scss/aligent_sass/

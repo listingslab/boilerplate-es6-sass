@@ -1,12 +1,27 @@
-/*
-   src/js/main.js
-   Main entry point for the Application
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/js/main.js
+ * Main JavaScript entry point
+ *
  */
 
 import Model from './Model';
 import View from './View';
 import Controller from './Controller';
-
 
 export default class App {
   constructor() {
