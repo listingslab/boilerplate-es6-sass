@@ -19,11 +19,12 @@
  *
  */
 
-import Model from './Model';
-import View from './View';
-import Controller from './Controller';
+import Model from './MVC/Model';
+import View from './MVC/View';
+import Controller from './MVC/Controller';
 
-export default class App {
+export default class Main {
+
   constructor() {
 
     // Instantiate MVC Classes
@@ -40,6 +41,8 @@ export default class App {
     this.c.setDependents(dependents);
 
   }
+
+
 }
 
-new App();
+new Main();

@@ -33,14 +33,14 @@ gulp.task('default',['init']);
 
 // Start watching src/js/ & src/scss files for changes
 gulp.task('init', ['js'], function() {
-    gulp.watch('src/*.js', ['js']);
+    gulp.watch('src/**/*.js', ['js']);
 });
 
 // Transpile and minify ES6 JavaScript into ES5 with & copy to build/js with sourcemap
 gulp.task('js', function(){
   return browserify({
     debug: true,
-    entries: ['./src/main.js'],
+    entries: ['./src/js/Main.js'],
   })
     .transform(babelify.configure({
       presets: ['es2015'],
