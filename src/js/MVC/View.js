@@ -30,4 +30,11 @@ export default class View {
     }
   }
 
+  showOutput (target, outputType, data){
+    target.textAraa.value('dauhd');
+  }
+
+  focusTextField (inputTextID){
+    inputTextID.focus();
+  }
 }

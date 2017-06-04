@@ -41,4 +41,8 @@ export default class Main {
   }
 }
 
-new Main();
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "jquery ready!" );
+    new Main();
+});

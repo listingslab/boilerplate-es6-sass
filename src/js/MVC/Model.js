@@ -23,7 +23,9 @@ export default class Model {
   constructor() {
     this.shortName = 'model';
     // load the data from ./data/data.json
-    this.loadData('./data/data.json');
+    this.loadJSON('/data/data.json');
+
+    this.data =  {};
   }
 
   setDependents(dependents) {
@@ -32,28 +34,13 @@ export default class Model {
     }
   }
 
-  loadData (jsonUrl){
-    console.log(jsonUrl);
-    // Assign handlers immediately after making the request,
+  loadJSON(path) {
+    console.log(this);
+    //this.v.focusTextField('#email');
+  }
 
-    // and remember the jqXHR object for this request
-    var jqxhr = $.ajax( jsonUrl )
-      .done(function(e) {
-        console.log( e );
-      })
-      .fail(function() {
-        console.log( "error" );
-      })
-      .always(function() {
-        console.log( "complete" );
-      });
-
-    // Perform other work here ...
-
-    // Set another completion function for the request above
-    jqxhr.always(function() {
-      console.log( "definately complete" );
-    });
+  doShit(shit){
+    this.doShit('doing shit');
   }
 
 }

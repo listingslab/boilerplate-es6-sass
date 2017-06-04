@@ -394,6 +394,12 @@ th {
     #app footer a {
       color: #333;
       text-decoration: none; }
+  #app .input-text-field {
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 20px;
+    width: 90%;
+    font-size: 20px; }
 
 #model {
   padding: 5px; }
