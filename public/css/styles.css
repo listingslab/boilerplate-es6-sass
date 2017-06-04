@@ -390,27 +390,38 @@ th {
   margin: 25px; }
   #app footer {
     margin-top: 50px;
-    text-align: center; }
+    font-size: 12px; }
     #app footer a {
       color: #333;
       text-decoration: none; }
+  #app .input-text-field {
+    border: 3px solid green;
+    border-radius: 5px;
+    padding: 20px;
+    width: 87%;
+    font-size: 20px; }
+  #app .input-submit {
+    margin-top: 15px;
+    background: green;
+    color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px; }
+    #app .input-submit a {
+      color: white; }
 
 #model {
-  border: 1px solid #ddd;
-  background: #eee;
   padding: 5px; }
   #model textarea {
     width: 98%;
     height: 200px; }
 
 #view {
-  border: 1px solid #ddd;
-  background: #eee;
   padding: 5px; }
 
 #controller {
-  border: 1px solid #ddd;
-  background: #eee;
   padding: 5px; }
 
 .layout,
@@ -425,9 +436,9 @@ th {
   .layout-app {
     flex-direction: row;
     flex: 1; }
-  .layout-content {
+  .layout-conten {
     flex: 1; }
-  .layout-model, .layout-controller {
+  .layout-model, .layout-view {
     flex: 0 0 350px; } }
 
 /*# sourceMappingURL=styles.css.map */

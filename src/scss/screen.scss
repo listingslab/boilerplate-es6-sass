@@ -26,17 +26,40 @@
   margin: 25px;
   footer{
     margin-top: 50px;
-    text-align: center;
+    font-size: 12px;
     a {
       color: #333;
       text-decoration: none;
     }
   }
+
+  .input-text-field {
+    border: 3px solid green;
+    border-radius: 5px;
+    padding:20px;
+    width: 87%;
+    font-size: 20px;
+  }
+
+  .input-submit {
+    margin-top:15px;
+    background: green;
+    color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding:20px;
+    width: 100%;
+    font-size: 20px;
+
+    a {
+      color: white;
+    }
+  }
 }
 
 #model{
-  border: 1px solid #ddd;
-  background: #eee;
+  // border: 1px solid #ddd;
+  // background: #eee;
   padding: 5px;
   textarea{
     width: 98%;
@@ -46,15 +69,15 @@
 
 
 #view{
-  border: 1px solid #ddd;
-  background: #eee;
+  // border: 1px solid #ddd;
+  // background: #eee;
   padding: 5px;
 }
 
 
 #controller{
-  border: 1px solid #ddd;
-  background: #eee;
+  // border: 1px solid #ddd;
+  // background: #eee;
   padding: 5px;
 }
 
@@ -73,10 +96,10 @@
     flex-direction: row;
     flex: 1;
   }
-  .layout-content {
+  .layout-conten {
     flex: 1;
   }
-  .layout-model, .layout-controller {
+  .layout-model, .layout-view {
     flex: 0 0 350px;
   }
 }

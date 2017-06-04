@@ -20,14 +20,25 @@
  */
 
 export default class View {
-  constructor() {
-    this.shortName = 'view';
+  constructor(main) {
+    this.main = main;
+    this.shortName = 'v';
+    this.showOutput ($('#output-model'), 'j' )
   }
 
   setDependents(dependents) {
     for (let i=0; i<dependents.length; i++){
       this[dependents[i].shortName] = dependents[i];
     }
+  }
+
+  showOutput (target, html){
+    target.html(html);
+    //target.html('fakshu iuhhhuhuuh  hhhhhhh')
+  }
+
+  focusTextField (inputTextID){
+    inputTextID.focus();
   }
 
 }
