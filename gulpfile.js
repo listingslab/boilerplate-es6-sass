@@ -58,7 +58,7 @@ gulp.task('js', function(){
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(uglify())
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./build/js'))
+    .pipe(gulp.dest('./public/js'))
 });
 
 // Preprocess sass into CSS & copy to build/css/styles.css with sourcemap
@@ -70,5 +70,5 @@ gulp.task('css', () => gulp.src('src/scss/*.scss')
   }))
   .pipe(rename('styles.css'))
   .pipe(sourcemaps.write('.'))
-  .pipe(gulp.dest('build/css'))
+  .pipe(gulp.dest('public/css'))
 );

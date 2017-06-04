@@ -390,7 +390,7 @@ th {
   margin: 25px; }
   #app footer {
     margin-top: 50px;
-    text-align: center; }
+    font-size: 12px; }
     #app footer a {
       color: #333;
       text-decoration: none; }
@@ -398,8 +398,19 @@ th {
     border: 3px solid green;
     border-radius: 5px;
     padding: 20px;
-    width: 90%;
+    width: 87%;
     font-size: 20px; }
+  #app .input-submit {
+    margin-top: 15px;
+    background: green;
+    color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px; }
+    #app .input-submit a {
+      color: white; }
 
 #model {
   padding: 5px; }
@@ -425,9 +436,9 @@ th {
   .layout-app {
     flex-direction: row;
     flex: 1; }
-  .layout-content {
+  .layout-conten {
     flex: 1; }
-  .layout-model, .layout-controller {
+  .layout-model, .layout-view {
     flex: 0 0 350px; } }
 
 /*# sourceMappingURL=styles.css.map */

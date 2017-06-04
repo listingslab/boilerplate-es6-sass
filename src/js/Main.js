@@ -27,11 +27,13 @@ export default class Main {
 
   constructor() {
 
+    console.log ('version 1.0.6')
     // Instantiate MVC Classes
     // See http://stackoverflow.com/questions/43838136/instantiate-and-use-2-or-more-javascript-es6-classes
     this.m = new Model();
     this.v = new View();
     this.c = new Controller();
+    this.f = 'fuck';
 
     // Create an array of instantiated classes and Set Dependents
     const dependents = [this.m, this.v, this.c];
@@ -41,8 +43,18 @@ export default class Main {
   }
 }
 
+let main = new Main();
 // A $( document ).ready() block.
 $( document ).ready(function() {
     console.log( "jquery ready!" );
-    new Main();
+    var listingslab = true;
+    if (listingslab) {
+        // listingslab = {
+        //   'firstVisit' = 'true',
+        //   'listingslab_cookie' = '1234456xcvb'
+        // };
+    }
+    // console.log(listingslab);
+    main.c.setButtonActions();
+    //console.log( "jquery done" );
 });

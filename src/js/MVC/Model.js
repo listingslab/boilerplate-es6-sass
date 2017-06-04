@@ -21,11 +21,9 @@
 
 export default class Model {
   constructor() {
-    this.shortName = 'model';
+    this.shortName = 'm';
     // load the data from ./data/data.json
-    this.loadJSON('/data/data.json');
-
-    this.data =  {};
+    // this.loadJSON('/data/data.json');
   }
 
   setDependents(dependents) {
@@ -35,12 +33,12 @@ export default class Model {
   }
 
   loadJSON(path) {
-    console.log(this);
-    //this.v.focusTextField('#email');
+    // console.log(this.v);
+    // this.v.focusTextField('#email');
   }
 
   doShit(shit){
-    this.doShit('doing shit');
+    // this.doShit('doing shit');
   }
 
 }

@@ -21,13 +21,30 @@
 
 export default class Controller {
   constructor() {
-    this.shortName = 'ui';
+    this.shortName = 'c';
+    //console.log($('#input-submit-email'));
+    // Should only be triggered on first page loa
+    // console.log ('set submit function for email field')
+
   }
 
   setDependents(dependents) {
     for (let i=0; i<dependents.length; i++){
       this[dependents[i].shortName] = dependents[i];
     }
+  }
+
+  setButtonActions() {
+    console.log('setButtonActions');
+    // button.onclick = function (){
+    //   alert ('click');
+    // }
+
+    $('#input-submit-button').click(function() {
+        //$.getJSON('someFile.json', data => $(this).html(data.text));
+        alert ('clicked');
+    });
+
   }
 
 }
