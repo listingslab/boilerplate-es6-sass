@@ -26,16 +26,12 @@ import Controller from './MVC/Controller';
 export default class Main {
 
   constructor() {
-
-
-    console.log ('version 1.0.8')
-
+    console.log ('version 1.1.0');
     // Instantiate MVC Classes
     // See http://stackoverflow.com/questions/43838136/instantiate-and-use-2-or-more-javascript-es6-classes
     this.m = new Model(this);
-    this.v = new View();
-    this.c = new Controller();
-    this.f = 'fuck';
+    this.v = new View(this);
+    this.c = new Controller(this);
 
     // Create an array of instantiated classes and Set Dependents
     const dependents = [this.m, this.v, this.c];
@@ -48,8 +44,8 @@ export default class Main {
 let main = new Main();
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    console.log( "jquery ready!" );
-    var listingslab = true;
+    // console.log( "jquery ready!" );
+    let listingslab = true;
     if (listingslab) {
         // listingslab = {
         //   'firstVisit' = 'true',
@@ -60,6 +56,5 @@ $( document ).ready(function() {
     main.c.setButtonActions();
     // load the data from ./data/data.json
     main.m.loadJSON('/data/data.json');
-
     //console.log( "jquery done" );
 });

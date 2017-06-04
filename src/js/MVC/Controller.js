@@ -20,7 +20,8 @@
  */
 
 export default class Controller {
-  constructor() {
+  constructor(main) {
+    this.main = main;
     this.shortName = 'c';
     //console.log($('#input-submit-email'));
     // Should only be triggered on first page loa
@@ -34,6 +35,7 @@ export default class Controller {
     }
   }
 
+
   setButtonActions() {
     // console.log('setButtonActions');
     // button.onclick = function (){
@@ -41,11 +43,9 @@ export default class Controller {
     // }
 
     $('#input-submit-button').click(function() {
-        $.getJSON('data/data.json', (data) =>
-          $('#output-model').html(data.text)
-        );
-        //console.log ('clicked');
+        console.log ('submitted');
     });
+
 
   }
 

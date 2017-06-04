@@ -24,7 +24,6 @@ export default class Model {
   constructor(main) {
     this.main = main;
     this.shortName = 'm';
-    this.loadJSON();
   }
 
   setDependents(dependents) {
@@ -34,7 +33,14 @@ export default class Model {
   }
 
   loadJSON(path) {
-    $('#output-model').html('loading model from ./public/data.json');
+        $.getJSON(path)
+          .done(function( data ) {
+            console.log(data);
+          })
+          .fail(function( error ) {
+            console.log(error.getAllResponseHeaders());
+          });
+    $('#output-model').html('Loading model from ' + path);
   }
 
   doShit(shit){

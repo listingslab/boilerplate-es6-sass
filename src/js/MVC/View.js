@@ -20,9 +20,10 @@
  */
 
 export default class View {
-  constructor() {
+  constructor(main) {
+    this.main = main;
     this.shortName = 'v';
-    this.showOutput ($('#output-model'), '< here is a bit of data</strong>' )
+    this.showOutput ($('#output-model'), 'j' )
   }
 
   setDependents(dependents) {
