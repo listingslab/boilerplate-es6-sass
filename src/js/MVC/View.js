@@ -21,7 +21,8 @@
 
 export default class View {
   constructor() {
-    this.shortName = 'view';
+    this.shortName = 'v';
+    this.showOutput ($('#output-model'), '< here is a bit of data</strong>' );
   }
 
   setDependents(dependents) {
@@ -30,11 +31,15 @@ export default class View {
     }
   }
 
-  showOutput (target, outputType, data){
-    target.textAraa.value('dauhd');
+  showOutput (target, html){
+    target.html(html);
+    //target.html('fakshu iuhhhuhuuh  hhhhhhh')
   }
 
   focusTextField (inputTextID){
     inputTextID.focus();
   }
+
+
+
 }

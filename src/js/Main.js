@@ -27,9 +27,10 @@ export default class Main {
 
   constructor() {
 
+    console.log ('version 1.0.8')
     // Instantiate MVC Classes
     // See http://stackoverflow.com/questions/43838136/instantiate-and-use-2-or-more-javascript-es6-classes
-    this.m = new Model();
+    this.m = new Model(this);
     this.v = new View();
     this.c = new Controller();
 
@@ -41,8 +42,20 @@ export default class Main {
   }
 }
 
+let main = new Main();
 // A $( document ).ready() block.
 $( document ).ready(function() {
     console.log( "jquery ready!" );
-    new Main();
+    var listingslab = true;
+    if (listingslab) {
+        // listingslab = {
+        //   'firstVisit' = 'true',
+        //   'listingslab_cookie' = '1234456xcvb'
+        // };
+    }
+    // console.log(listingslab);
+    main.c.setButtonActions();
+    // load the data from ./data/data.json
+    main.m.loadJSON('/data/data.json');
+    //console.log( "jquery done" );
 });

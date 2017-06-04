@@ -20,12 +20,10 @@
  */
 
 export default class Model {
-  constructor() {
-    this.shortName = 'model';
-    // load the data from ./data/data.json
-    this.loadJSON('/data/data.json');
-
-    this.data =  {};
+  constructor(main) {
+    this.main = main;
+    this.shortName = 'm';
+    this.loadJSON();
   }
 
   setDependents(dependents) {
@@ -35,12 +33,14 @@ export default class Model {
   }
 
   loadJSON(path) {
-    console.log(this);
+    //alert ('loading');
+    $('#output-model').html('loading model from ./public/data.json');
+    //console.log(this.main.v.showOutput ($(''), 'herkhf sfuhdf  hu fu f f f   f f  f'));
     //this.v.focusTextField('#email');
   }
 
   doShit(shit){
-    this.doShit('doing shit');
+    // this.doShit('doing shit');
   }
 
 }
