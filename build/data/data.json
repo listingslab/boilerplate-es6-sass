@@ -1,3 +1,10 @@
 {
-  "dataType": "test"
+  "API_Version": "1",
+  "AppName" : "Boilerplate",
+  "cookie": "none",
+  "origin":{
+    url: "http://listingslab.com",
+    namespace: "listingslab"
+  },
+  "email_address": "unknown"
 }

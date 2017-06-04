@@ -396,21 +396,15 @@ th {
       text-decoration: none; }
 
 #model {
-  border: 1px solid #ddd;
-  background: #eee;
   padding: 5px; }
   #model textarea {
     width: 98%;
     height: 200px; }
 
 #view {
-  border: 1px solid #ddd;
-  background: #eee;
   padding: 5px; }
 
 #controller {
-  border: 1px solid #ddd;
-  background: #eee;
   padding: 5px; }
 
 .layout,

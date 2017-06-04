@@ -38,9 +38,7 @@ export default class Main {
     this.m.setDependents(dependents);
     this.v.setDependents(dependents);
     this.c.setDependents(dependents);
-
   }
-
 }
 
 new Main();
