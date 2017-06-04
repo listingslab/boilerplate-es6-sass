@@ -24,6 +24,12 @@ export default class Model {
   constructor(main) {
     this.main = main;
     this.shortName = 'm';
+    this.data = {
+      dataTypes: [
+        'one',
+        'two'
+      ]
+    };
   }
 
   setDependents(dependents) {
@@ -35,11 +41,14 @@ export default class Model {
   loadJSON(path) {
         $.getJSON(path)
           .done(function( data ) {
-            console.log(data);
-          })
+            //console.log(data.AppName);
+            //console.log(this.main.m.data)
+            this.main.v.showOutput($('#output-model'), JSON.stringify(data));
+          }.bind(this))
           .fail(function( error ) {
-            console.log(error.getAllResponseHeaders());
-          });
+            console.log(error.responseText);
+          })
+        ;
     $('#output-model').html('Loading model from ' + path);
   }
 

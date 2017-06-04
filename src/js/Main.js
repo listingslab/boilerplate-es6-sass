@@ -55,6 +55,6 @@ $( document ).ready(function() {
     // console.log(listingslab);
     main.c.setButtonActions();
     // load the data from ./data/data.json
-    main.m.loadJSON('/data/data.json');
+    main.m.loadJSON('http://127.0.0.1:8080/data/data.json');
     //console.log( "jquery done" );
 });

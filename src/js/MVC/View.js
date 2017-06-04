@@ -23,7 +23,7 @@ export default class View {
   constructor(main) {
     this.main = main;
     this.shortName = 'v';
-    this.showOutput ($('#output-model'), 'j' )
+    this.showOutput ($('#output-model'), 'broken' )
   }
 
   setDependents(dependents) {
@@ -34,7 +34,6 @@ export default class View {
 
   showOutput (target, html){
     target.html(html);
-    //target.html('fakshu iuhhhuhuuh  hhhhhhh')
   }
 
   focusTextField (inputTextID){
