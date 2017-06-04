@@ -20,6 +20,7 @@
  */
 
 export default class Model {
+
   constructor(main) {
     this.main = main;
     this.shortName = 'm';
@@ -33,10 +34,7 @@ export default class Model {
   }
 
   loadJSON(path) {
-    //alert ('loading');
     $('#output-model').html('loading model from ./public/data.json');
-    //console.log(this.main.v.showOutput ($(''), 'herkhf sfuhdf  hu fu f f f   f f  f'));
-    //this.v.focusTextField('#email');
   }
 
   doShit(shit){

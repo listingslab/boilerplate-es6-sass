@@ -44,7 +44,7 @@ export default class Controller {
         $.getJSON('data/data.json', (data) =>
           $('#output-model').html(data.text)
         );
-        console.log ('clicked');
+        //console.log ('clicked');
     });
 
   }
