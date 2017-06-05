@@ -1,0 +1,78 @@
+<!doctype html>
+<!--/**
+* Boilerplate ES6 Sass App
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Open Software License (OSL 3.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* https://opensource.org/licenses/osl-3.0.php
+*
+* @category   Listingslab
+* @package    boilerplate-es6-sass
+* @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+* @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+* @author     Chris Dorward <listingslab@gmail.com>
+*
+* index.html
+* Run the app
+*
+*/ -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Better Checkout</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+
+    <body class="layout" id="app">
+        <header>
+            <h1>Better Checkout</h1>
+        </header>
+
+        <div class="layout-app">
+
+
+            <div class="layout-controller" id="controller">
+                <h2>Controller</h2>
+                <p>Please give us your Email address?</p>
+
+                  <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    class="input-text-field"
+                    placeholder="Please enter email"
+                  />
+
+                  <input
+                    id="input-submit-button"
+                    type="submit"
+                    class="input-submit"
+                  />
+            </div>
+
+            <div class="layout-model" id="model">
+                <h2>Model</h2>
+                <textarea id="output-model"></textarea>
+            </div>
+
+            <div class="layout-content" id="view">
+                <h2>View</h2>
+                <div id="output-view">Your email address is.... <strong>unknown</strong></div>
+            </div>
+
+        </div>
+
+
+        <script src="./js/jquery-3.2.1.min.js"></script>
+        <script src="./js/app.js"></script>
+
+        <footer>
+            <a href="https://github.com/listingslab/boilerplate-es6-sass#fork-destination-box" target="_blank">Github</a>
+        </footer>
+
+    </body>
+
+</html>

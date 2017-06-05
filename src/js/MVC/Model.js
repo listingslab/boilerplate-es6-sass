@@ -20,14 +20,31 @@
  */
 
 export default class Model {
-  constructor() {
-    this.shortName = 'model';
+
+  constructor(main) {
+    this.main = main;
+    this.shortName = 'm';
   }
 
   setDependents(dependents) {
     for (let i=0; i<dependents.length; i++){
       this[dependents[i].shortName] = dependents[i];
     }
+  }
+
+  loadJSON(path) {
+        $.getJSON(path)
+          .done(function( data ) {
+            console.log(data);
+          })
+          .fail(function( error ) {
+            console.log(error.getAllResponseHeaders());
+          });
+    $('#output-model').html('Loading model from ' + path);
+  }
+
+  doShit(shit){
+    // this.doShit('doing shit');
   }
 
 }
