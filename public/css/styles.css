@@ -388,6 +388,12 @@ th {
 
 #app {
   margin: 25px; }
+  #app h1 {
+    font-size: 16px; }
+  #app h2 {
+    font-size: 15px; }
+  #app h3 {
+    font-size: 14px; }
   #app footer {
     margin-top: 50px;
     font-size: 12px; }
@@ -395,7 +401,7 @@ th {
       color: #333;
       text-decoration: none; }
   #app .input-text-field {
-    border: 3px solid green;
+    border: 3px solid #eee;
     border-radius: 5px;
     padding: 20px;
     width: 87%;
@@ -413,16 +419,19 @@ th {
       color: white; }
 
 #model {
-  padding: 5px; }
+  padding: 15px; }
   #model textarea {
     width: 98%;
-    height: 200px; }
+    height: 200px;
+    border: none;
+    font-size: 10px;
+    color: grey; }
 
 #view {
-  padding: 5px; }
+  padding: 15px; }
 
 #controller {
-  padding: 5px; }
+  padding: 15px; }
 
 .layout,
 .layout-app {
@@ -439,6 +448,6 @@ th {
   .layout-conten {
     flex: 1; }
   .layout-model, .layout-view {
-    flex: 0 0 250px; } }
+    flex: 0 0 200px; } }
 
 /*# sourceMappingURL=styles.css.map */

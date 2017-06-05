@@ -25,7 +25,8 @@ export default class Controller {
     this.shortName = 'c';
     //console.log($('#input-submit-email'));
     // Should only be triggered on first page loa
-    // console.log ('set submit function for email field')
+    // console.log ('set submit function for email field');
+    this.focusField('email');
 
   }
 
@@ -35,6 +36,10 @@ export default class Controller {
     }
   }
 
+  focusField (fieldId){
+    console.log('field id is....')
+    $(`#${fieldId}`).focus();
+  }
 
   setButtonActions() {
     // console.log('setButtonActions');
@@ -46,6 +51,7 @@ export default class Controller {
         console.log ('submitted');
     });
 
+    $('#email').focus();
 
   }
 

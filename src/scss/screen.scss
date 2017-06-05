@@ -24,6 +24,17 @@
 
 #app{
   margin: 25px;
+
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+
   footer{
     margin-top: 50px;
     font-size: 12px;
@@ -34,7 +45,7 @@
   }
 
   .input-text-field {
-    border: 3px solid green;
+    border: 3px solid #eee;
     border-radius: 5px;
     padding:20px;
     width: 87%;
@@ -60,10 +71,13 @@
 #model{
   // border: 1px solid #ddd;
   // background: #eee;
-  padding: 5px;
+  padding: 15px;
   textarea{
     width: 98%;
     height: 200px;
+    border: none;
+    font-size: 10px;
+    color: grey;
   }
 }
 
@@ -71,14 +85,14 @@
 #view{
   // border: 1px solid #ddd;
   // background: #eee;
-  padding: 5px;
+  padding: 15px;
 }
 
 
 #controller{
   // border: 1px solid #ddd;
   // background: #eee;
-  padding: 5px;
+  padding: 15px;
 }
 
 .layout,
@@ -100,6 +114,6 @@
     flex: 1;
   }
   .layout-model, .layout-view {
-    flex: 0 0 250px;
+    flex: 0 0 200px;
   }
 }
