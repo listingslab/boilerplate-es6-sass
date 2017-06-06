@@ -1,6 +1,6 @@
 {
   "name": "boilerplate-es6-sass",
-  "version": "1.0.3`",
+  "version": "1.0.5",
   "description": "Boilerplate JavaScript ES6 MVC Application (with Sass)",
   "main": "src/js/Main.js",
   "scripts": {
@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/listingslab/boilerplate-es6-sass.git"
   },
+  "license": "OSL-3.0",
   "author": {
     "name": "Chris Dorward",
     "email": "listingslab@gmail.com",
-    "url": "http://listingslab.com"
+    "url": "https://github.com/listingslab/boilerplate-es6-sass/wiki"
   },
-  "license": "OSL-3.0",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^7.3.0",
@@ -37,8 +37,5 @@
     "Sass",
     "MVC",
     "boilerplate"
-  ],
-  "dependencies": {
-    "jquery": "^3.2.1"
-  }
+  ]
 }
