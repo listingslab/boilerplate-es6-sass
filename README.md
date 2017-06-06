@@ -1,4 +1,4 @@
-![alt text](https://github.com/listingslab/boilerplate-es6-sass/blob/master/build/images/listingslab.png?raw=true "Listingslab Logo")
+![alt text](https://raw.githubusercontent.com/listingslab/boilerplate-es6-sass/master/public/images/listingslab.png "Listingslab Logo")
 
 ## Boilerplate JavaScript ES6 MVC Application (with Sass)
 
@@ -54,7 +54,7 @@ git push origin master
 #### What is MVC?
 Model–view–controller (MVC) is a software architectural pattern for implementing user interfaces on computers. It divides a given application into three interconnected parts in order to separate internal representations of information from the ways that information is presented to and accepted from the user.
 
-![alt text](https://github.com/listingslab/boilerplate-es6-sass/blob/master/build/images/mvc.png?raw=true "What is MVC?")
+![alt text](https://raw.githubusercontent.com/listingslab/boilerplate-es6-sass/master/public/images/mvc.png "What is MVC?")
 
 #### License
 

@@ -20,28 +20,24 @@
  */
 @import 'normalize';
 @import 'variables';
-@import 'input_text';
+@import 'partials/input_text';
+@import 'partials/input_submit';
+@import 'partials/h-tags';
+@import 'partials/font-size';
 @import 'mixins/fontface';
 @include fontFace('AvantGarde','../fonts/itc_avant_garde_gothic_book-webfont');
 
 #app{
+  :focus {outline:none;}
+
   margin: 25px;
   background: $color-app-bg;
   color: $color-app-text;
-  h1 {
-    font-size: 16px;
 
-  }
-  h2 {
-    font-size: 15px;
-  }
-  h3 {
-    font-size: 14px;
-  }
 
   footer{
     margin-top: 50px;
-    font-size: 12px;
+
     a {
       color: #333;
       text-decoration: none;
@@ -50,19 +46,7 @@
 
 
 
-  .input-submit {
-    margin-top:15px;
-    background: $color-button-bg;
-    color: $color-button-text;
-    border: 3px solid $color-button-border;
-    border-radius: 5px;
-    padding:20px;
-    width: 100%;
-    font-size: 20px;
-    a {
-      color: white;
-    }
-  }
+
 }
 
 #model{

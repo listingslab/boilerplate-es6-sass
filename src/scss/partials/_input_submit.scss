@@ -14,26 +14,23 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_variables.scss
- * Manipulate project variables
+ * src/scss/_input-Submit.scss
+ * How to style a submit input field
  *
  */
+@import 'variables';
 
-// Main colour of the application
-$color-app-bg: #eee;
-$color-app-text: #222;
-$color-app-light-text: #fff;
-$color-brand-main: blue;
-$color-borders: purple;
-
-
-// UI (Buttons and stuff)
-$ui-border-radius: 10px;
-$ui-border-thickness: 10px;
-$ui-border: $color-borders;
-
-
-// Big fat Clicking Buttons
-$color-button-bg: $color-brand-main;
-$color-button-border: $color-borders;
-$color-button-text: #ddd;
+#app{
+  .input-submit {
+    margin-top:15px;
+    background: $color-button-bg;
+    color: $color-button-text;
+    border: $ui-border-thickness solid $ui-border;
+    border-radius: $ui-border-radius;
+    padding:15px;
+    width: 100%;
+    a {
+      color: white;
+    }
+  }
+}

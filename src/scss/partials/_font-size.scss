@@ -14,15 +14,9 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_partial.scss
- * Partial chunks template
+ * src/scss/_font-size.scss
+ * Typography
  *
  */
+@import 'variables';
 
-.input-text-field {
-  border: 3px solid #eee;
-  border-radius: 5px;
-  padding:20px;
-  width: 88%;
-  font-size: 20px;
-}
