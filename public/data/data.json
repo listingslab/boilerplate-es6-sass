@@ -1,10 +1,10 @@
 {
   "API_Version": "1",
-  "AppName" : "Boilerplate",
-  "cookie": "none",
+  "AppName" : "BetterCheckout",
+  "cookie": "1234456xcvb",
   "origin":{
-    url: "http://listingslab.com",
-    namespace: "listingslab"
+    "url": "http://listingslab.com",
+    "namespace": "listingslab"
   },
   "email_address": "unknown"
 }
