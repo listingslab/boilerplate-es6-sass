@@ -1,6 +1,6 @@
 module.exports = {
     app: {
-        name: 'myKoajsRestApp',
+        name: 'BetterCheckoutAPI',
         version: '3.1.0'
     },
     server: {
