@@ -25,10 +25,7 @@ export default class Model {
     this.main = main;
     this.shortName = 'm';
     this.data = {
-      dataTypes: [
-        'one',
-        'two'
-      ]
+      isLoaded: false,
     };
   }
 
@@ -41,9 +38,9 @@ export default class Model {
   loadJSON(path) {
         $.getJSON(path)
           .done(function( data ) {
-            //console.log(data.AppName);
-            //console.log(this.main.m.data)
-            this.main.v.showOutput($('#output-model'), JSON.stringify(data));
+            this.main.m.data.isLoaded = true;
+            this.main.m.data.recievedJSON = data;
+            this.main.v.showOutput($('#output-model'), JSON.stringify(this.main.m.data));
           }.bind(this))
           .fail(function( error ) {
             console.log(error.responseText);

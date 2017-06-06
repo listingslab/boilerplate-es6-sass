@@ -1,7 +1,7 @@
 {
   "API_Version": "1",
-  "AppName" : "Better Checkout",
-  "cookie": "none",
+  "AppName" : "BetterCheckout",
+  "cookie": "1234456xcvb",
   "origin":{
     "url": "http://listingslab.com",
     "namespace": "listingslab"
