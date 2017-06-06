@@ -1,10 +1,10 @@
 {
   "name": "boilerplate-es6-sass",
-  "version": "1.0.2`",
-  "description": "Boilerplate for JavaScript ES6 MVC Application using Sass",
-  "main": "src/main.js",
+  "version": "1.0.3`",
+  "description": "Boilerplate JavaScript ES6 MVC Application (with Sass)",
+  "main": "src/js/Main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",

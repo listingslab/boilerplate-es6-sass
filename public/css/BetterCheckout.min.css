@@ -376,6 +376,213 @@ td,
 th {
   padding: 0; }
 
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_variables.scss
+ * Manipulate project variables
+ *
+ */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_input-text.scss
+ * How to style a text input field
+ *
+ */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_variables.scss
+ * Manipulate project variables
+ *
+ */
+.input-text-field {
+  border: 10px solid purple;
+  border-radius: 10px;
+  padding: 20px;
+  width: 88%;
+  font-size: 20px; }
+
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_input-Submit.scss
+ * How to style a submit input field
+ *
+ */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_variables.scss
+ * Manipulate project variables
+ *
+ */
+#app .input-submit {
+  margin-top: 15px;
+  background: blue;
+  color: #ddd;
+  border: 10px solid purple;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%; }
+  #app .input-submit a {
+    color: white; }
+
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_h-tags.scss
+ * How to style H Tags
+ *
+ */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_variables.scss
+ * Manipulate project variables
+ *
+ */
+#app h1 {
+  font-size: 15px; }
+
+#app h2 {
+  font-size: 14px; }
+
+#app h3 {
+  font-size: 13px; }
+
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_font-size.scss
+ * Typography
+ *
+ */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_variables.scss
+ * Manipulate project variables
+ *
+ */
 /*
     fontface mixin from https://github.com/magnetikonline/sassboilerplate/blob/master/fontface.scss
  */
@@ -387,36 +594,16 @@ th {
   font-weight: normal; }
 
 #app {
-  margin: 25px; }
-  #app h1 {
-    font-size: 16px; }
-  #app h2 {
-    font-size: 15px; }
-  #app h3 {
-    font-size: 14px; }
+  margin: 25px;
+  background: #eee;
+  color: #222; }
+  #app :focus {
+    outline: none; }
   #app footer {
-    margin-top: 50px;
-    font-size: 12px; }
+    margin-top: 50px; }
     #app footer a {
       color: #333;
       text-decoration: none; }
-  #app .input-text-field {
-    border: 3px solid #eee;
-    border-radius: 5px;
-    padding: 20px;
-    width: 87%;
-    font-size: 20px; }
-  #app .input-submit {
-    margin-top: 15px;
-    background: green;
-    color: white;
-    border: 3px solid black;
-    border-radius: 5px;
-    padding: 20px;
-    width: 100%;
-    font-size: 20px; }
-    #app .input-submit a {
-      color: white; }
 
 #model {
   padding: 15px; }
@@ -450,4 +637,4 @@ th {
   .layout-model, .layout-view {
     flex: 0 0 200px; } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=BetterCheckout.min.css.map */

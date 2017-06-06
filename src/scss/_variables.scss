@@ -1,0 +1,39 @@
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_variables.scss
+ * Manipulate project variables
+ *
+ */
+
+// Main colour of the application
+$color-app-bg: #eee;
+$color-app-text: #222;
+$color-app-light-text: #fff;
+$color-brand-main: blue;
+$color-borders: purple;
+
+
+// UI (Buttons and stuff)
+$ui-border-radius: 10px;
+$ui-border-thickness: 10px;
+$ui-border: $color-borders;
+
+
+// Big fat Clicking Buttons
+$color-button-bg: $color-brand-main;
+$color-button-border: $color-borders;
+$color-button-text: #ddd;
