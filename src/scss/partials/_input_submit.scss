@@ -1,0 +1,36 @@
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_input-Submit.scss
+ * How to style a submit input field
+ *
+ */
+@import 'variables';
+
+#app{
+  .input-submit {
+    margin-top:15px;
+    background: $color-button-bg;
+    color: $color-button-text;
+    border: $ui-border-thickness solid $ui-border;
+    border-radius: $ui-border-radius;
+    padding:15px;
+    width: 100%;
+    a {
+      color: white;
+    }
+  }
+}
