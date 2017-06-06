@@ -6,3 +6,5 @@ node_modules
 \.idea/
 
 src/scss/aligent_sass/
+.DS_Store
+npm-debug.log
