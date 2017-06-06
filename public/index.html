@@ -14,6 +14,8 @@
 * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
 * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 * @author     Chris Dorward <listingslab@gmail.com>
+
+* Fork it - https://github.com/listingslab/boilerplate-es6-sass#fork-destination-box
 *
 * index.html
 * Run the app
@@ -30,50 +32,60 @@
     </head>
 
     <body class="layout" id="app">
-        <header>
-            <h1>Boilerplate</h1>
-        </header>
-
         <div class="layout-app">
 
-            <div class="layout-controller" id="controller">
-                <h2>Please give us your Email address</h2>
-                  <input
-                    id="email"
-                    name="email"
-                    type="text"
-                    class="input-text-field"
-                    placeholder="Type email"
-                  />
-
-                  <input
-                    id="input-submit-button"
-                    type="submit"
-                    class="input-submit"
-                  />
+            <div class="content-basket layout-col layout-controller">
+                <h2>Your basket</h2>
+                <div class="item">
+                    <div class="image">
+                        <img src="./images/listingslab.png" />
+                    </div>
+                </div>
             </div>
 
-            <div class="layout-model" id="model">
-                <h2>Model</h2>
+
+            <div class="layout-col layout-controller" id="view">
+                <div class="email-capture-2">
+                    <h2>Let's get started</h2>
+                    <input
+                        id="email"
+                        name="email"
+                        type="text"
+                        class="input-text-field"
+                        placeholder="Type email"
+                    />
+                    <input
+                            id="input-submit-button"
+                            type="submit"
+                            class="input-submit"
+                    />
+                </div>
+                <div class="output-view" id="id_output-view">
+                    <div>
+                        <span class="output-strong">Namespace </span> <span id="v-appName">namespace</span>
+                    </div>
+                    <!--<div>origin :-->
+                        <!--<pre>origin</pre>-->
+                    <!--</div>-->
+                    <div>
+                        <span class="output-strong">Email </span><span id="v-email">email@example.com</span>
+                    </div>
+                    <div>
+                        <span class="output-strong">Cookie </span><span id="v-email">123456oduyukhfs</span>
+                    </div>
+                </div>
+
+            <div class="layout-debugger layout-col layout-model" id="debugger">
+                <h3>Debugger</h3>
                 <textarea id="output-model"></textarea>
             </div>
 
-            <div class="layout-content" id="view">
-                <h2>View</h2>
-                <div id="output-view">Your email address is.... <strong>unknown</strong></div>
-            </div>
-
-            <div style="clear:both;"></div>
 
         </div>
 
 
         <script src="./js/jquery-3.2.1.min.js"></script>
         <script src="./js/BetterCheckout.min.js"></script>
-
-        <footer>
-            <a href="https://github.com/listingslab/boilerplate-es6-sass#fork-destination-box" target="_blank">Github</a>
-        </footer>
 
     </body>
 

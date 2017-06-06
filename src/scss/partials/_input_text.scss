@@ -23,7 +23,8 @@
 .input-text-field {
   border: $ui-border-thickness solid $ui-border;
   border-radius: $ui-border-radius;
-  padding:20px;
-  width: 88%;
-  font-size: 20px;
+  box-shadow: $ui-dropshadow;
+  padding:2%;
+  width: 96%;
+  margin-bottom: 10px;
 }

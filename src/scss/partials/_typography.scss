@@ -14,34 +14,12 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/screen.scss
- * Main Sass entry point
+ * src/scss/_font-size.scss
+ * Typography
  *
  */
-@import 'normalize';
 @import 'variables';
 
-
-@import 'partials/h-tags';
-@import 'partials/input_submit';
-@import 'partials/input_text';
-@import 'partials/input_textarea';
-@import 'partials/layout';
-
-/* Typography */
-@import 'mixins/fontface';
-@include fontFace('AvantGarde','../fonts/itc_avant_garde_gothic_book-webfont');
-@import 'partials/typography';
-/* End Typography */
-
-#app{
-  /* app level stuff*/
-  :focus {
-    outline:none;
-  }
-  background: $color-app-bg;
-
-  #debugger {
-    visibility: hidden;
-  }
+#app {
+  color: $color-app-text;
 }

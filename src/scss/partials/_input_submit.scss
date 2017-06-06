@@ -22,15 +22,16 @@
 
 #app{
   .input-submit {
-    margin-top:15px;
     background: $color-button-bg;
     color: $color-button-text;
     border: $ui-border-thickness solid $ui-border;
     border-radius: $ui-border-radius;
-    padding:15px;
+    box-shadow: $ui-dropshadow;
+    padding:2%;
     width: 100%;
+    font-weight: bold;
     a {
-      color: white;
+      color: red;
     }
   }
 }

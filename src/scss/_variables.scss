@@ -23,15 +23,14 @@
 $color-app-bg: #eee;
 $color-app-text: #222;
 $color-app-light-text: #fff;
-$color-brand-main: blue;
-$color-borders: purple;
-
+$color-brand-main: #333;
+$color-borders: #ddd;
 
 // UI (Buttons and stuff)
-$ui-border-radius: 10px;
-$ui-border-thickness: 10px;
+$ui-border-radius: 3px;
+$ui-border-thickness: 2px;
 $ui-border: $color-borders;
-
+$ui-dropshadow : 3px 3px 3px $color-brand-main;
 
 // Big fat Clicking Buttons
 $color-button-bg: $color-brand-main;
