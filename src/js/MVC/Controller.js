@@ -37,7 +37,7 @@ export default class Controller {
   }
 
   focusField (fieldId){
-    console.log('field id is....')
+    // console.log('field id is....')
     $(`#${fieldId}`).focus();
   }
 
