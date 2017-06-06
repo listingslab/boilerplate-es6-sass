@@ -412,6 +412,43 @@ th {
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
+ * src/scss/_layout.scss
+ * Layout
+ *
+ */
+.layout,
+.layout-app {
+  display: flex;
+  flex-direction: column; }
+
+.layout-controller {
+  order: -1; }
+
+@media (min-width: 768px) {
+  .layout-app {
+    flex-direction: row;
+    flex: 1; }
+  .layout-content {
+    flex: 1; }
+  .layout-model, .layout-controller {
+    flex: 0 0 33.2%; } }
+
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
  * src/scss/_h-tags.scss
  * How to style H Tags
  *
@@ -486,11 +523,11 @@ th {
  *
  */
 #app .input-submit {
-  background: blue;
+  background: teal;
   color: #ddd;
-  border: 2px solid #ddd;
+  border: 2px solid #80ffff;
   border-radius: 3px;
-  box-shadow: 3px 3px 3px blue;
+  box-shadow: 3px 3px 3px teal;
   padding: 2%;
   width: 100%;
   font-weight: bold; }
@@ -538,9 +575,9 @@ th {
  *
  */
 .input-text-field {
-  border: 2px solid #ddd;
+  border: 2px solid #80ffff;
   border-radius: 3px;
-  box-shadow: 3px 3px 3px blue;
+  box-shadow: 3px 3px 3px teal;
   padding: 2%;
   width: 96%;
   margin-bottom: 10px; }
@@ -592,43 +629,6 @@ textarea {
   background: none;
   text-wrap: normal;
   color: #222; }
-
-/**
- * Boilerplate ES6 Sass App
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
- * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
- *
- * src/scss/_layout.scss
- * Layout
- *
- */
-.layout,
-.layout-app {
-  display: flex;
-  flex-direction: column; }
-
-.layout-controller {
-  order: -1; }
-
-@media (min-width: 768px) {
-  .layout-app {
-    flex-direction: row;
-    flex: 1; }
-  .layout-content {
-    flex: 1; }
-  .layout-model, .layout-controller {
-    flex: 0 0 33.2%; } }
 
 /**
  * Boilerplate ES6 Sass App
@@ -736,13 +736,23 @@ textarea {
   color: #222; }
 
 /* End Typography */
-#app {
-  /* app level stuff*/ }
-  #app :focus {
-    outline: none; }
-  #app #debugger {
-    visibility: hidden; }
-  #app .screen-heading {
-    border-bottom: 1px solid blue; }
+#app :focus {
+  outline: none; }
+
+#app .pad-25-top {
+  margin-top: 25px; }
+
+#app .boldify {
+  font-weight: bold;
+  color: teal; }
+
+#app .align-left {
+  text-align: left; }
+
+#app #debugger {
+  visibility: hidden; }
+
+#app .screen-heading {
+  border-bottom: 1px solid teal; }
 
 /*# sourceMappingURL=BetterCheckout.min.css.map */

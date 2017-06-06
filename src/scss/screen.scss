@@ -21,12 +21,13 @@
 @import 'normalize';
 @import 'variables';
 
+@import 'layout';
 
 @import 'partials/h-tags';
 @import 'partials/input_submit';
 @import 'partials/input_text';
 @import 'partials/input_textarea';
-@import 'partials/layout';
+
 
 @import 'screens/email-capture';
 @import 'screens/order-summary';
@@ -38,9 +39,21 @@
 /* End Typography */
 
 #app{
-  /* app level stuff*/
   :focus {
     outline:none;
+  }
+
+  .pad-25-top{
+    margin-top: 25px;
+  }
+
+  .boldify{
+    font-weight: bold;
+    color: $color-brand-main;
+  }
+
+  .align-left{
+    text-align: left;
   }
 
   #debugger {

@@ -23,8 +23,8 @@
 $color-app-bg: #eee;
 $color-app-text: #222;
 $color-app-light-text: #fff;
-$color-brand-main: blue;
-$color-borders: #ddd;
+$color-brand-main: teal;
+$color-borders: lighten($color-brand-main, 50%);
 
 // UI (Buttons and stuff)
 $ui-border-radius: 3px;
