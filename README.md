@@ -2,7 +2,7 @@
 
 ## Boilerplate JavaScript ES6 MVC Application (with Sass)
 
-Quickly get up and running with an JavaScript [ES6](https://es6.io) MVC Application and [Sass](http://sass-lang.com) styling. It uses [Gulp](http://gulpjs.com/) and [Babel](https://babeljs.io) as simply as possible to transpile the source code into browser-ready JavaScript and CSS but you can easily adapt it to your own workflow.
+Quickly get up and running with a JavaScript [ES6](https://es6.io) MVC Application and [Sass](http://sass-lang.com) styling. It uses [Gulp](http://gulpjs.com/) and [Babel](https://babeljs.io) as simply as possible to transpile the source code into browser-ready JavaScript and CSS but you can easily adapt it to your own workflow.
 
 #### What does it give you?
 
