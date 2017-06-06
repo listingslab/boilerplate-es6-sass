@@ -1,6 +1,6 @@
 {
   "name": "boilerplate-es6-sass",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Boilerplate JavaScript ES6 MVC Application (with Sass)",
   "main": "src/js/Main.js",
   "scripts": {
