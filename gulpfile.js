@@ -15,7 +15,7 @@
  * @author     Chris Dorward <listingslab@gmail.com>
  *
  * gulpfile.js
- * Handles transpiling ES6 and Sass preprocessing
+ * Handles transpiling of ES6 and Sass preprocessing
  *
  */
 
