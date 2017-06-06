@@ -33,7 +33,6 @@
 
     <body class="layout" id="app">
         <div class="layout-app">
-
             <div class="content-basket layout-col layout-controller" id="order-summary">
                 <h2>
                     <span class="screen-heading">
@@ -49,31 +48,25 @@
                 </div>
             </div>
 
-
-
             <div class="layout-col layout-controller" id="email-capture">
                 <h2>
                     <span class="screen-heading">
                         Welcome Aboard!
                     </span>
                 </h2>
-
-
-                    <input
-                        id="email"
-                        name="email"
-                        type="text"
-                        class="input-text-field"
-                        placeholder="Type email"
-                    />
-                    <input
-                            id="input-submit-button"
-                            type="submit"
-                            class="input-submit"
-                    />
-
-
-                <div id="" class="align-left pad-25-top">
+                <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    class="input-text-field"
+                    placeholder="Type email"
+                />
+                <input
+                        id="input-submit-button"
+                        type="submit"
+                        class="input-submit"
+                />
+                <div class="align-left pad-25-top">
                     <div>
                         <span class="output-strong">Namespace </span> <span class="boldify" id="v-appName">namespace</span>
                     </div>
@@ -87,15 +80,18 @@
                         <span class="output-strong">Cookie </span><span class="boldify" id="v-email">123456oduyukhfs</span>
                     </div>
                 </div>
+              </div>
 
-            <div class="layout-debugger layout-col layout-model" id="debugger">
-                <h3>Debugger</h3>
+              <div class="layout-col" id="third-col">
+                <h2>
+                    <span class="screen-heading">
+                        Third Column
+                    </span>
+                </h2>
                 <textarea id="output-model"></textarea>
+              </div>
+
             </div>
-
-
-        </div>
-
 
         <script src="./js/jquery-3.2.1.min.js"></script>
         <script src="./js/BetterCheckout.min.js"></script>

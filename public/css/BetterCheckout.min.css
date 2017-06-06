@@ -736,23 +736,18 @@ textarea {
   color: #222; }
 
 /* End Typography */
-#app :focus {
-  outline: none; }
-
-#app .pad-25-top {
-  margin-top: 25px; }
-
-#app .boldify {
-  font-weight: bold;
-  color: teal; }
-
-#app .align-left {
-  text-align: left; }
-
-#app #debugger {
-  visibility: hidden; }
-
-#app .screen-heading {
-  border-bottom: 1px solid teal; }
+#app {
+  margin-top: 50px; }
+  #app :focus {
+    outline: none; }
+  #app .pad-25-top {
+    margin-top: 25px; }
+  #app .boldify {
+    font-weight: bold;
+    color: teal; }
+  #app .align-left {
+    text-align: left; }
+  #app .screen-heading {
+    border-bottom: 1px solid teal; }
 
 /*# sourceMappingURL=BetterCheckout.min.css.map */

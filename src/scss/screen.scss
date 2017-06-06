@@ -39,10 +39,12 @@
 /* End Typography */
 
 #app{
+
+  margin-top:50px;
+
   :focus {
     outline:none;
   }
-
   .pad-25-top{
     margin-top: 25px;
   }
@@ -57,7 +59,7 @@
   }
 
   #debugger {
-    visibility: hidden;
+    // visibility: hidden;
   }
 
   .screen-heading{
