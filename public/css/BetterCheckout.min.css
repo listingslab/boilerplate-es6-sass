@@ -376,6 +376,53 @@ td,
 th {
   padding: 0; }
 
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_variables.scss
+ * Manipulate project variables
+ *
+ */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/_partial.scss
+ * Partial chunks template
+ *
+ */
+.input-text-field {
+  border: 3px solid #eee;
+  border-radius: 5px;
+  padding: 20px;
+  width: 88%;
+  font-size: 20px; }
+
 /*
     fontface mixin from https://github.com/magnetikonline/sassboilerplate/blob/master/fontface.scss
  */
@@ -387,7 +434,9 @@ th {
   font-weight: normal; }
 
 #app {
-  margin: 25px; }
+  margin: 25px;
+  background: #333;
+  color: yellow; }
   #app h1 {
     font-size: 16px; }
   #app h2 {
@@ -400,17 +449,11 @@ th {
     #app footer a {
       color: #333;
       text-decoration: none; }
-  #app .input-text-field {
-    border: 3px solid #eee;
-    border-radius: 5px;
-    padding: 20px;
-    width: 87%;
-    font-size: 20px; }
   #app .input-submit {
     margin-top: 15px;
-    background: green;
-    color: white;
-    border: 3px solid black;
+    background: blue;
+    color: pink;
+    border: 3px solid white;
     border-radius: 5px;
     padding: 20px;
     width: 100%;
@@ -450,4 +493,4 @@ th {
   .layout-model, .layout-view {
     flex: 0 0 200px; } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=BetterCheckout.min.css.map */

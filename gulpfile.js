@@ -31,6 +31,9 @@ const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 
+const JSfileName = 'BetterCheckout.min.js';
+const CSSfileName = 'BetterCheckout.min.css';
+
 gulp.task('default',['init']);
 
 // Watch src/js & src/scss directories for changes
@@ -53,7 +56,7 @@ gulp.task('js', function(){
     .on("error", notify.onError(function (error) {
       return "Error: " + error.message;
     }))
-    .pipe(source('app.js'))
+    .pipe(source(JSfileName))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(uglify())
@@ -61,14 +64,14 @@ gulp.task('js', function(){
     .pipe(gulp.dest('./public/js'))
 });
 
-// Preprocess sass into CSS & copy to build/css/styles.css with sourcemap
+// Pre-process Sass into CSS3 & copy to build/css/ with a sourcemap
 gulp.task('css', () => gulp.src('src/scss/*.scss')
   .pipe(sourcemaps.init())
   .pipe(sass({source: 'styles.js'}))
   .on("error", notify.onError(function (error) {
     return "Error: " + error.message;
   }))
-  .pipe(rename('styles.css'))
+  .pipe(rename(CSSfileName))
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest('public/css'))
 );
