@@ -9,7 +9,7 @@
 * It is also available through the world-wide-web at this URL:
 * https://opensource.org/licenses/osl-3.0.php
 *
-* @category   Listingslab
+* @category   BetterCheckout
 * @package    boilerplate-es6-sass
 * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
 * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
@@ -24,7 +24,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Boilerplate</title>
+        <title>BetterCheckout</title>
         <link rel="stylesheet" href="./css/BetterCheckout.min.css">
         <script>
             window.es6app = {};
@@ -34,19 +34,31 @@
     <body class="layout" id="app">
         <div class="layout-app">
 
-            <div class="content-basket layout-col layout-controller">
-                <h2>Your basket</h2>
-                <div class="item">
-                    <div class="image">
+            <div class="content-basket layout-col layout-controller" id="order-summary">
+                <h2>
+                    <span class="screen-heading">
+                        Order Summary
+                    </span>
+                </h2>
+                <div id="item-number" class="item-number-display">XX Items</div>
+                <div id="items">
+                    <div class="order-item">
                         <img src="./images/listingslab.png" />
+                        <h4>Title of the order item</h4>
                     </div>
                 </div>
             </div>
 
 
-            <div class="layout-col layout-controller" id="view">
-                <div class="email-capture-2">
-                    <h2>Let's get started</h2>
+
+            <div class="layout-col layout-controller" id="email-capture">
+                <h2>
+                    <span class="screen-heading">
+                        Welcome Aboard!
+                    </span>
+                </h2>
+                <div>
+
                     <input
                         id="email"
                         name="email"

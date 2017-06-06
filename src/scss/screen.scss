@@ -28,6 +28,9 @@
 @import 'partials/input_textarea';
 @import 'partials/layout';
 
+@import 'screens/email-capture';
+@import 'screens/order-summary';
+
 /* Typography */
 @import 'mixins/fontface';
 @include fontFace('AvantGarde','../fonts/itc_avant_garde_gothic_book-webfont');
@@ -39,9 +42,12 @@
   :focus {
     outline:none;
   }
-  background: $color-app-bg;
 
   #debugger {
     visibility: hidden;
+  }
+
+  .screen-heading{
+    border-bottom:1px solid $color-brand-main;
   }
 }

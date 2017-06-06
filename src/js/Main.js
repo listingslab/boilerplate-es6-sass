@@ -26,7 +26,7 @@ import Controller from './MVC/Controller';
 export default class Main {
 
   constructor() {
-    console.log ('version 1.0.1');
+    console.log ('version 1.1.2');
     // Instantiate MVC Classes
     // See http://stackoverflow.com/questions/43838136/instantiate-and-use-2-or-more-javascript-es6-classes
     this.m = new Model(this);
@@ -44,7 +44,7 @@ export default class Main {
 let main = new Main();
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    // console.log( "jquery ready!" );
+    console.log( "jquery ready!" );
     let listingslab = true;
     if (listingslab) {
         // listingslab = {
