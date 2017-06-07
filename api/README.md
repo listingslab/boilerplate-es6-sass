@@ -1,123 +1,52 @@
-node-koajs-rest-skeleton v3.1
-=============================
+## Fake API for Boilerplate ES6 MVC App
 
-A simple [Koajs 2.2.0 Application REST Skeleton](https://github.com/ria-com/node-koajs-rest-skeleton)
-This version based on [koa 2.2.0](https://github.com/koajs/koa). 
-    
+### Node.js KOA API Server
 
-quick start
-===========
+Using Koa we'll spin up a very minimal Node.js API to act as our bridging component for further integration.
 
-**Checkout node-koajs-rest-skeleton:**
+### Install and run API server
 
-```sh
-$ git clone https://github.com/ria-com/node-koajs-rest-skeleton
+```bash
+sudo npm install
+npm run api
 ```
 
-**Make your own new project:**
+### Command
 
-```sh
-$ mv node-koajs-rest-skeleton my_new_project
-$ cd my_new_project
-$ rm -rf .git
-```
+#### Setup
 
-**Edit package.json:**
+    npm install
 
-```sh
-$ vi package.json
-```
+#### Develop
 
-**Edit config/* files:**
+    npm start
 
-```sh
-$ vi config/default.js
-```
+#### Test
 
-**Install modules**
-```sh
-$ npm install
-```
-
-**Start app:**
-```sh
-$ node ./index.js
-```
-
-testing
-=======
-
-
-**Make your own Spec-files for testing and start test**
-
-In this skeleton for automatic testing was used [jasmine-nodie](https://jasmine.github.io/2.1/node.html) & [Frisby (REST API testing framework)](http://frisbyjs.com).
-I wrote several tests that you can use as examples.
-
-All tests should be placed in the ./spec folder. The name of each test file must end with *Spec.js
-
-To run the tests, use 
-```sh
-$ cd my_new_project
-$ npm test
-```
-
-**Manual testing your REST service:**
-
-You can also manual check the serviceability of your service with bash and [curl](https://curl.haxx.se/)
-
-###### get user id 1
-```sh
-$ curl -XGET "http://localhost:8081/users/1"
-```
-###### get all users
-```sh
-$ curl -XGET "http://localhost:8081/users"
-```
-
-###### add new user
-```sh
-$ curl -XPOST "http://localhost:8081/users" -d '{"name":"New record 1"}' -H 'Content-Type: application/json'
-```
-
-###### edit user id 3
-```sh
-$ curl -XPUT "http://localhost:8081/users/3" -d '{"name":"New record 3"}' -H 'Content-Type: application/json'
-```
-
-###### delete user id 3
-```sh
-$ curl -XDELETE "http://localhost:8081/users/3"
-```
+    npm test
 
 
 
-console api
-===========
+### Dependencies
 
-```sh
-Usage: /usr/bin/node ./console.js --section [string] [--action [string]] [--opt [object]]
+- Watcher and hot-reload: [nodemon](http://nodemon.io/)
+- Test:
+    + [mocha](https://mochajs.org/)
+    + [should](https://github.com/shouldjs/should.js)
+    + [supertest](https://github.com/visionmedia/supertest)
+- Build: [babel](http://babeljs.io/)
+    + tools: babel-register
+    + presets: babel-preset-es2015-node5
+    + plugins: transform-async-to-generator, syntax-async-functions
+- *Lint*:
+    You can choose the lint tool that you prefer.
 
-Options:
-  --opt, --options  example --opt.app=mobile --opt.s=1  [default: {}]
-  --section                                             [required]
-  --action                                              [default: "index"]
-```
+### Reference
 
-For example 
-```sh
-$ ./console.js --section=default --opt.hello=world
-Hello world defaultController & index action with options: {"hello":"world"}
-```
+- [koajs/koa#533](https://github.com/koajs/koa/issues/533)
+- [koajs/koa#596](https://github.com/koajs/koa/issues/596)
 
-rabbitmq api
-============
 
-```sh
-Usage: NODE_WORKER_NAME=[worker_name] NODE_QUEUE_NAME=[queue_name] /usr/bin/node --harmony ./worker.js
-```
+### License
 
-For example 
-```sh
-$ NODE_WORKER_NAME=example NODE_QUEUE_NAME=example /usr/bin/node --harmony ./worker.js
-```
-
+MIT &copy; [GeekPlux](https://github.com/geekplux)

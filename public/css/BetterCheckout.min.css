@@ -10,7 +10,7 @@
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
@@ -388,14 +388,58 @@ th {
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_variables.scss
- * Manipulate project variables
+ * src/scss/_utils.scss
+ * A few high level utility classes to apply to the #app div for use during development
  *
  */
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_variables.scss
+ * Manipulate project variables for swimweargalore
+ *
+ */
+/* _________________
+ Swimwear Galore
+  #46b5e5 Main Light Blue Brand Colour
+  #0058a1 Main Dark Blue Brand Colour
+  #0058a1 Button BG
+  #e9e9e9 Total Panel BG
+  #f5f5f5 Bottom Panel BG
+  #3db3e6 Bottom Panel BG Blue Heading
+  #e3e4e6 Grey Border
+  #000000 Black Text
+  #ffffff White Text
+ ____________________ */
+#boilerplate {
+  color: #000; }
+  #boilerplate :focus {
+    outline: none; }
+  #boilerplate a {
+    color: #46b5e5;
+    text-decoration: none;
+    font-weight: bold; }
+  #boilerplate a:hover {
+    color: #0058a1; }
+  #boilerplate #header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px; }
+  #boilerplate #footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.7em; }
+
 /**
  * Boilerplate ES6 Sass App
  *
@@ -408,181 +452,148 @@ th {
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_input-text.scss
- * How to style a text input field
+ * src/scss/utils/_layout.scss
+ * Layout using flexbox
+ *
+ */
+#boilerplate .flex-grid {
+  display: flex; }
+
+#boilerplate .flex-grid-col {
+  flex: 1;
+  padding: 10px; }
+
+#boilerplate .col-1 {
+  order: 0; }
+
+#boilerplate .col-2 {
+  order: 1; }
+
+#boilerplate .col-3 {
+  order: 2; }
+
+@media (max-width: 768px) {
+  #boilerplate .flex-grid {
+    display: block; } }
+
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_swimweargalore.scss
+ * Imports all the skin files
  *
  */
 /**
- * Boilerplate ES6 Sass App
+ * Swimwear Galore Better Ckeckout Skin
  *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
  *
- * src/scss/_variables.scss
- * Manipulate project variables
+ * src/scss/skins/swimweargalore/_forms.scss
+ * Form inputs etc
  *
  */
-.input-text-field {
-  border: 10px solid purple;
-  border-radius: 10px;
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_variables.scss
+ * Manipulate project variables for swimweargalore
+ *
+ */
+/* _________________
+ Swimwear Galore
+  #46b5e5 Main Light Blue Brand Colour
+  #0058a1 Main Dark Blue Brand Colour
+  #0058a1 Button BG
+  #e9e9e9 Total Panel BG
+  #f5f5f5 Bottom Panel BG
+  #3db3e6 Bottom Panel BG Blue Heading
+  #e3e4e6 Grey Border
+  #000000 Black Text
+  #ffffff White Text
+ ____________________ */
+#boilerplate .input-text-field {
+  border: 1px solid #e3e4e6;
+  border-radius: 3px;
   padding: 20px;
-  width: 88%;
-  font-size: 20px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+#boilerplate input[type="text"] {
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 1.5em; }
+
+#boilerplate input[type="submit"] {
+  border: 1px solid #e3e4e6;
+  background: #0058a1;
+  border-radius: 3px;
+  width: 100%;
+  padding: 25px;
+  color: #fff;
+  font-weight: bold; }
+
+#boilerplate input[type="submit"]:hover {
+  background: #46b5e5; }
 
 /**
- * Boilerplate ES6 Sass App
+ * Swimwear Galore Better Ckeckout Skin
  *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
- *
- * src/scss/_input-Submit.scss
- * How to style a submit input field
- *
- */
-/**
- * Boilerplate ES6 Sass App
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
- * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
- *
- * src/scss/_variables.scss
- * Manipulate project variables
- *
- */
-#app .input-submit {
-  margin-top: 15px;
-  background: blue;
-  color: #ddd;
-  border: 10px solid purple;
-  border-radius: 10px;
-  padding: 15px;
-  width: 100%; }
-  #app .input-submit a {
-    color: white; }
-
-/**
- * Boilerplate ES6 Sass App
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
- * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
- *
- * src/scss/_h-tags.scss
- * How to style H Tags
- *
- */
-/**
- * Boilerplate ES6 Sass App
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
- * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
- *
- * src/scss/_variables.scss
- * Manipulate project variables
- *
- */
-#app h1 {
-  font-size: 15px; }
-
-#app h2 {
-  font-size: 14px; }
-
-#app h3 {
-  font-size: 13px; }
-
-/**
- * Boilerplate ES6 Sass App
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
- * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
  *
  * src/scss/_font-size.scss
  * Typography
  *
  */
 /**
- * Boilerplate ES6 Sass App
+ * Swimwear Galore Better Ckeckout Skin
  *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
  *
- * src/scss/_variables.scss
- * Manipulate project variables
+ * src/scss/skins/swimweargalore/_variables.scss
+ * Manipulate project variables for swimweargalore
  *
  */
+/* _________________
+ Swimwear Galore
+  #46b5e5 Main Light Blue Brand Colour
+  #0058a1 Main Dark Blue Brand Colour
+  #0058a1 Button BG
+  #e9e9e9 Total Panel BG
+  #f5f5f5 Bottom Panel BG
+  #3db3e6 Bottom Panel BG Blue Heading
+  #e3e4e6 Grey Border
+  #000000 Black Text
+  #ffffff White Text
+ ____________________ */
 /*
     fontface mixin from https://github.com/magnetikonline/sassboilerplate/blob/master/fontface.scss
  */
@@ -593,48 +604,91 @@ th {
   font-style: normal;
   font-weight: normal; }
 
-#app {
-  margin: 25px;
-  background: #eee;
-  color: #222; }
-  #app :focus {
-    outline: none; }
-  #app footer {
-    margin-top: 50px; }
-    #app footer a {
-      color: #333;
-      text-decoration: none; }
+#boilerplate {
+  font-family: 'AvantGarde';
+  font-size: 1em; }
+  #boilerplate .flex-grid-col .screen-title {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  #boilerplate .screen-header {
+    border-bottom: 2px solid #46b5e5;
+    padding-bottom: 5px; }
+  #boilerplate h1, #boilerplate h2, #boilerplate h3, #boilerplate h4, #boilerplate h5, #boilerplate h6 {
+    color: #000;
+    text-align: center; }
+  #boilerplate h1 {
+    font-size: 1.6em; }
+  #boilerplate h2 {
+    font-size: 1.4em; }
+  #boilerplate h3 {
+    font-size: 1.2em; }
+  #boilerplate h4 {
+    font-size: 1em; }
+  #boilerplate h5 {
+    font-size: 0.8em; }
+  #boilerplate h6 {
+    font-size: 0.6em; }
 
-#model {
-  padding: 15px; }
-  #model textarea {
-    width: 98%;
-    height: 200px;
-    border: none;
-    font-size: 10px;
-    color: grey; }
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_font-size.scss
+ * Order Summary Screen
+ *
+ */
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_variables.scss
+ * Manipulate project variables for swimweargalore
+ *
+ */
+/* _________________
+ Swimwear Galore
+  #46b5e5 Main Light Blue Brand Colour
+  #0058a1 Main Dark Blue Brand Colour
+  #0058a1 Button BG
+  #e9e9e9 Total Panel BG
+  #f5f5f5 Bottom Panel BG
+  #3db3e6 Bottom Panel BG Blue Heading
+  #e3e4e6 Grey Border
+  #000000 Black Text
+  #ffffff White Text
+ ____________________ */
+#boilerplate #order-summary .order-summary-total {
+  font-weight: bold;
+  margin-bottom: 10px; }
 
-#view {
-  padding: 15px; }
-
-#controller {
-  padding: 15px; }
-
-.layout,
-.layout-app {
+#boilerplate #order-summary .order-summary-item {
   display: flex;
-  flex-direction: column; }
-
-.layout-model {
-  order: -1; }
-
-@media (min-width: 992px) {
-  .layout-app {
-    flex-direction: row;
+  border: 1px solid #e3e4e6;
+  margin-bottom: 10px;
+  padding: 5px; }
+  #boilerplate #order-summary .order-summary-item .order-summary-item-image {
     flex: 1; }
-  .layout-conten {
+    #boilerplate #order-summary .order-summary-item .order-summary-item-image img {
+      max-height: 250px;
+      max-width: 75%; }
+  #boilerplate #order-summary .order-summary-item .order-summary-item-info {
     flex: 1; }
-  .layout-model, .layout-view {
-    flex: 0 0 200px; } }
+    #boilerplate #order-summary .order-summary-item .order-summary-item-info .item-title {
+      margin-top: 20px;
+      font-weight: bold; }
+    #boilerplate #order-summary .order-summary-item .order-summary-item-info .item-price {
+      margin-top: 5px; }
+    #boilerplate #order-summary .order-summary-item .order-summary-item-info .item-size {
+      margin-top: 25px; }
 
 /*# sourceMappingURL=BetterCheckout.min.css.map */

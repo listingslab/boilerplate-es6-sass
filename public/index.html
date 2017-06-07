@@ -1,5 +1,6 @@
 <!doctype html>
-<!--/**
+<!--
+/**
 * Boilerplate ES6 Sass App
 *
 * NOTICE OF LICENSE
@@ -11,69 +12,141 @@
 *
 * @category   Listingslab
 * @package    boilerplate-es6-sass
-* @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+* @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
 * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 * @author     Chris Dorward <listingslab@gmail.com>
+
+* Fork it - https://github.com/listingslab/boilerplate-es6-sass#fork-destination-box
 *
 * index.html
 * Run the app
 *
-*/ -->
+*/
+-->
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Boilerplate</title>
         <link rel="stylesheet" href="./css/BetterCheckout.min.css">
-        <script>
-            window.es6app = {};
-        </script>
+
     </head>
 
-    <body class="layout" id="app">
-        <header>
-            <h1>Boilerplate</h1>
-        </header>
+    <body>
 
-        <div class="layout-app">
+        <div id="boilerplate">
+            <script>
+              window.es6app = {
+                "appDiv": "boilerplate",
+                "apiURL": "http://localhost:1975"
+              };
+            </script>
 
-            <div class="layout-controller" id="controller">
-                <h2>Please give us your Email address</h2>
-                  <input
-                    id="email"
-                    name="email"
-                    type="text"
-                    class="input-text-field"
-                    placeholder="Type email"
-                  />
+            <div id="header">
+                <h2>Swimwear Galore BetterCheckout</h2>
+                <div>
+                    You'll need to install and run the fake api. Check if it's running
+                    <a href="http://localhost:1975" target="_blank">here</a>.
+                </div>
+            </div>
+            <div class="screens">
+                <div class="flex-grid">
 
-                  <input
-                    id="input-submit-button"
-                    type="submit"
-                    class="input-submit"
-                  />
+                    <div class="col-2 flex-grid-col" id="screen_1">
+                        <h3 class="screen-title">
+                            <span class="screen-header">
+                                First things first
+                            </span>
+                        </h3>
+                        <p>Please enter your email address to continue to delivery & payment</p>
+                        <label for="email">Email Address</label>
+                        <div class="input-text-field">
+                        <input
+                                id="email"
+                                name="email"
+                                type="text"
+                                placeholder=""
+                        />
+                        </div>
+                        <input
+                                id="input-submit-button"
+                                type="submit"
+                                class="input-submit"
+                                value="CONTINUE"
+                        />
+                    </div>
+
+                    <div class="col-1 flex-grid-col" id="screen_2">
+                        <h3 class="screen-title">
+                            <span class="screen-header">
+                               Order Summary
+                            </span>
+                        </h3>
+                        <div id="order-summary">
+                            <div class="order-summary-total">3 Items</div>
+
+                            <!--Start Order Summary Item-->
+                            <div class="order-summary-item">
+                                <div class="order-summary-item-image">
+                                    <img
+                                        src="./images/swimweargalore/Jets_Arcadia_Bandeau.jpg"
+                                        alt="Jets Arcadia Bandeau"
+                                    />
+                                </div>
+                                <div class="order-summary-item-info">
+                                    <div class="item-title">Jets Arcadia Bandeau</div>
+                                    <div class="item-price">$149.99</div>
+                                    <div class="item-size">Size: 12</div>
+                                    <div class="item-colour">Colour: Amazonia</div>
+                                </div>
+                            </div>
+                            <!--EndOrder Summary Item-->
+
+                            <!--Start Order Summary Item-->
+                            <div class="order-summary-item">
+                                <div class="order-summary-item-image">
+                                    <img
+                                            src="./images/swimweargalore/Costa_Del_Sol_Garden_Island_Fly_Away_Separate_Tankini_Top.jpg"
+                                            alt="Jets Arcadia Bandeau"
+                                    />
+                                </div>
+                                <div class="order-summary-item-info">
+                                    <div class="item-title">Costa Del Sol Garden Island Fly Away Separate Tankini Top</div>
+                                    <div class="item-price">$109.99</div>
+                                    <div class="item-size">Size: 16</div>
+                                </div>
+                            </div>
+                            <!--EndOrder Summary Item-->
+
+                            <!--Start Order Summary Item-->
+                            <div class="order-summary-item">
+                                <div class="order-summary-item-image">
+                                    <img
+                                            src="./images/swimweargalore/Speedo_Mens_Avalon_Heritage_Watershort.jpg"
+                                            alt="Jets Arcadia Bandeau"
+                                    />
+                                </div>
+                                <div class="order-summary-item-info">
+                                    <div class="item-title">Speedo Mens Avalon Heritage Watershort</div>
+                                    <div class="item-price">$54.99</div>
+                                    <div class="item-size">Size: L</div>
+                                </div>
+                            </div>
+                            <!--EndOrder Summary Item-->
+
+                        </div>
+                    </div>
+
+                    <div class="col-3 flex-grid-col" id="screen_3">
+                    </div>
+
+                </div>
             </div>
 
-            <div class="layout-model" id="model">
-                <h2>Model</h2>
-                <textarea id="output-model"></textarea>
-            </div>
+            <div id="footer" />
 
-            <div class="layout-content" id="view">
-                <h2>View</h2>
-                <div id="output-view">Your email address is.... <strong>unknown</strong></div>
-            </div>
-
-            <div style="clear:both;"></div>
-
+            <script src="./js/jquery-3.2.1.min.js"></script>
+            <script src="./js/BetterCheckout.min.js"></script>
         </div>
-
-
-        <script src="./js/jquery-3.2.1.min.js"></script>
-        <script src="./js/BetterCheckout.min.js"></script>
-
-        <footer>
-            <a href="https://github.com/listingslab/boilerplate-es6-sass#fork-destination-box" target="_blank">Github</a>
-        </footer>
 
     </body>
 

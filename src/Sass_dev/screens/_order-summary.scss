@@ -14,30 +14,20 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/js/View.js
- * Handles everything to do with displaying, logging or rendering
+ * src/scss/_order-summary.scss
+ * Order Summary Screen
  *
  */
 
-export default class View {
-  constructor(main) {
-    this.main = main;
-    this.shortName = 'v';
-    this.showOutput ($('#output-model'), 'broken' )
-  }
-
-  setDependents(dependents) {
-    for (let i=0; i<dependents.length; i++){
-      this[dependents[i].shortName] = dependents[i];
+#app{
+  #order-summary{
+    text-align: center;
+    .item-number-display{
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+    #items, #item-number{
+      text-align: left;
     }
   }
-
-  showOutput (target, html){
-    target.html(html);
-  }
-
-  focusTextField (inputTextID){
-    inputTextID.focus();
-  }
-
 }

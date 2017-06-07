@@ -14,30 +14,41 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/js/View.js
- * Handles everything to do with displaying, logging or rendering
+ * src/scss/_utils.scss
+ * A few high level utility classes to apply to the #app div for use during development
  *
  */
+@import '../skins/swimweargalore/variables';
 
-export default class View {
-  constructor(main) {
-    this.main = main;
-    this.shortName = 'v';
-    this.showOutput ($('#output-model'), 'broken' )
+#boilerplate {
+
+  color: $colour-text;
+
+  :focus {
+    outline:none;
   }
 
-  setDependents(dependents) {
-    for (let i=0; i<dependents.length; i++){
-      this[dependents[i].shortName] = dependents[i];
-    }
+  a {
+    color: $colour-link;
+    text-decoration: none;
+    font-weight: bold;
   }
 
-  showOutput (target, html){
-    target.html(html);
+  a:hover {
+    color: $colour-link-over;
   }
 
-  focusTextField (inputTextID){
-    inputTextID.focus();
+
+  #header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+  }
+
+  #footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: $text-size-small;
   }
 
 }
