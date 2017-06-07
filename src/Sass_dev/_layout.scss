@@ -14,30 +14,34 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/js/View.js
- * Handles everything to do with displaying, logging or rendering
+ * src/scss/_layout.scss
+ * Layout
  *
  */
 
-export default class View {
-  constructor(main) {
-    this.main = main;
-    this.shortName = 'v';
-    this.showOutput ($('#output-model'), 'broken' )
-  }
+.layout-col {
+  border: 1px dotted orange;
+}
 
-  setDependents(dependents) {
-    for (let i=0; i<dependents.length; i++){
-      this[dependents[i].shortName] = dependents[i];
-    }
-  }
+.layout,
+.layout-app {
+  display: flex;
+  flex-direction: column;
+}
 
-  showOutput (target, html){
-    target.html(html);
-  }
+.layout-controller {
+  order: -1;
+}
 
-  focusTextField (inputTextID){
-    inputTextID.focus();
+@media (min-width: 768px) {
+  .layout-app {
+    flex-direction: row;
+    flex: 1;
   }
-
+  .layout-content {
+    flex: 1;
+  }
+  .layout-model, .layout-controller {
+    flex: 0 0 33.2%;
+  }
 }

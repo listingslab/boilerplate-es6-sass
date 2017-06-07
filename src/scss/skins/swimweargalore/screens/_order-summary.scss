@@ -1,0 +1,60 @@
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_font-size.scss
+ * Order Summary Screen
+ *
+ */
+@import '../variables';
+
+#boilerplate {
+  #order-summary {
+
+    .order-summary-total {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .order-summary-item {
+      display: flex;
+      border: 1px solid $colour-border;
+      margin-bottom: 10px;
+      padding: 5px;
+
+      .order-summary-item-image {
+        flex: 1;
+        img {
+          max-height: 250px;
+          max-width: 75%;
+        }
+      }
+
+      .order-summary-item-info {
+        flex: 1;
+        .item-title {
+          margin-top: 20px;
+          font-weight: bold;
+        }
+
+        .item-price {
+          margin-top: 5px;
+        }
+
+        .item-size {
+          margin-top: 25px;
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+
+  }
+}

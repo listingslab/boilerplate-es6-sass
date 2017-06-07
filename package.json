@@ -1,14 +1,15 @@
 {
   "name": "boilerplate-es6-sass",
-  "version": "1.1.0",
+  "version": "1.1.6",
   "description": "Boilerplate JavaScript ES6 MVC Application (with Sass)",
   "main": "src/js/Main.js",
   "scripts": {
-    "dev": "gulp"
+    "start": "http-server -p 1976 -a localhost && npm run api",
+    "api": "./node_modules/.bin/nodemon ./api/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/listingslab/boilerplate-es6-sass.git"
+    "url": "https://github.com/listingslab/boilerplate-es6-sass"
   },
   "license": "OSL-3.0",
   "author": {
@@ -28,6 +29,7 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^2.1.2",
     "http-server": "^0.10.0",
+    "nodemon": "^1.11.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },

@@ -14,30 +14,25 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/js/View.js
- * Handles everything to do with displaying, logging or rendering
+ * src/scss/_variables.scss
+ * Manipulate project variables
  *
  */
 
-export default class View {
-  constructor(main) {
-    this.main = main;
-    this.shortName = 'v';
-    this.showOutput ($('#output-model'), 'broken' )
-  }
+// Main colour of the application
+$color-app-bg: #eee;
+$color-app-text: #222;
+$color-app-light-text: #fff;
+$color-brand-main: teal;
+$color-borders: lighten($color-brand-main, 50%);
 
-  setDependents(dependents) {
-    for (let i=0; i<dependents.length; i++){
-      this[dependents[i].shortName] = dependents[i];
-    }
-  }
+// UI (Buttons and stuff)
+$ui-border-radius: 3px;
+$ui-border-thickness: 2px;
+$ui-border: $color-borders;
+$ui-dropshadow : 3px 3px 3px $color-brand-main;
 
-  showOutput (target, html){
-    target.html(html);
-  }
-
-  focusTextField (inputTextID){
-    inputTextID.focus();
-  }
-
-}
+// Big fat Clicking Buttons
+$color-button-bg: $color-brand-main;
+$color-button-border: $color-borders;
+$color-button-text: #ddd;

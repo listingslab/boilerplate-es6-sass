@@ -10,7 +10,7 @@
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
@@ -22,11 +22,12 @@
 import Model from './MVC/Model';
 import View from './MVC/View';
 import Controller from './MVC/Controller';
+import packageJSON from '../../package.json'
 
 export default class Main {
 
   constructor() {
-    console.log ('version 1.0.1');
+
     // Instantiate MVC Classes
     // See http://stackoverflow.com/questions/43838136/instantiate-and-use-2-or-more-javascript-es6-classes
     this.m = new Model(this);
@@ -57,4 +58,6 @@ $( document ).ready(function() {
     // load the data from ./data/data.json
     main.m.loadJSON('./data/data.json');
     //console.log( "jquery done" );
+    const footerHTML = `<a href="${packageJSON.repository.url}" target="_blank">Github</a> vs ${packageJSON.version}`;
+    $('#footer').html(footerHTML);
 });

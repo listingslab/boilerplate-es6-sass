@@ -14,30 +14,13 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/js/View.js
- * Handles everything to do with displaying, logging or rendering
+ * src/scss/_email-capture.scss
+ * Email Capture Screen
  *
  */
 
-export default class View {
-  constructor(main) {
-    this.main = main;
-    this.shortName = 'v';
-    this.showOutput ($('#output-model'), 'broken' )
+#app{
+  #email-capture{
+    text-align: center;
   }
-
-  setDependents(dependents) {
-    for (let i=0; i<dependents.length; i++){
-      this[dependents[i].shortName] = dependents[i];
-    }
-  }
-
-  showOutput (target, html){
-    target.html(html);
-  }
-
-  focusTextField (inputTextID){
-    inputTextID.focus();
-  }
-
 }
