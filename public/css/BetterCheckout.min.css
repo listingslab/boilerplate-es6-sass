@@ -423,8 +423,6 @@ th {
  ____________________ */
 #boilerplate {
   color: #000; }
-  #boilerplate .screens {
-    border: 1px dotted #e3e4e6; }
   #boilerplate a {
     color: #46b5e5;
     text-decoration: none;
@@ -476,7 +474,7 @@ th {
 #boilerplate .col-3 {
   order: 2; }
 
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   #boilerplate .flex-grid {
     display: block; } }
 
@@ -569,8 +567,11 @@ th {
 #boilerplate {
   font-family: 'AvantGarde';
   font-size: 0.9em; }
+  #boilerplate .flex-grid-col .screen-title {
+    margin-bottom: 50px; }
   #boilerplate .screen-header {
-    border-bottom: 2px solid #46b5e5; }
+    border-bottom: 2px solid #46b5e5;
+    padding-bottom: 5px; }
   #boilerplate h1, #boilerplate h2, #boilerplate h3, #boilerplate h4, #boilerplate h5, #boilerplate h6 {
     color: #000;
     text-align: center; }
@@ -625,9 +626,27 @@ th {
   #000000 Black Text
   #ffffff White Text
  ____________________ */
-#boilerplate .order-summary-item {
+#boilerplate #order-summary .order-summary-total {
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+#boilerplate #order-summary .order-summary-item {
+  display: flex;
   border: 1px solid #e3e4e6;
   margin-bottom: 10px;
-  padding: 10px; }
+  padding: 5px; }
+  #boilerplate #order-summary .order-summary-item .order-summary-item-image {
+    flex: 1; }
+    #boilerplate #order-summary .order-summary-item .order-summary-item-image img {
+      max-width: 100%; }
+  #boilerplate #order-summary .order-summary-item .order-summary-item-info {
+    flex: 1; }
+    #boilerplate #order-summary .order-summary-item .order-summary-item-info .item-title {
+      margin-top: 20px;
+      font-weight: bold; }
+    #boilerplate #order-summary .order-summary-item .order-summary-item-info .item-price {
+      margin-top: 5px; }
+    #boilerplate #order-summary .order-summary-item .order-summary-item-info .item-size {
+      margin-top: 25px; }
 
 /*# sourceMappingURL=BetterCheckout.min.css.map */

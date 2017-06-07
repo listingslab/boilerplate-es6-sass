@@ -26,7 +26,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>BetterCheckout</title>
+        <title>Boilerplate</title>
         <link rel="stylesheet" href="./css/BetterCheckout.min.css">
 
     </head>
@@ -44,14 +44,15 @@
             <div id="header">
                 <h2>Swimwear Galore BetterCheckout</h2>
                 <div>
-                    You'll need to install and run the fake api.
+                    You'll need to install and run the fake api. Check if it's running
+                    <a href="http://localhost:1975" target="_blank">here</a>.
                 </div>
             </div>
             <div class="screens">
                 <div class="flex-grid">
 
                     <div class="col-2 flex-grid-col" id="screen_1">
-                        <h3>
+                        <h3 class="screen-title">
                             <span class="screen-header">
                                 First things first
                             </span>
@@ -73,27 +74,67 @@
                     </div>
 
                     <div class="col-1 flex-grid-col" id="screen_2">
-                        <h3>
+                        <h3 class="screen-title">
                             <span class="screen-header">
                                Order Summary
                             </span>
                         </h3>
                         <div id="order-summary">
+                            <div class="order-summary-total">3 Items</div>
+
+                            <!--Start Order Summary Item-->
                             <div class="order-summary-item">
-                                here is an item
+                                <div class="order-summary-item-image">
+                                    <img
+                                        src="./images/swimweargalore/Jets_Arcadia_Bandeau.jpg"
+                                        alt="Jets Arcadia Bandeau"
+                                    />
+                                </div>
+                                <div class="order-summary-item-info">
+                                    <div class="item-title">Jets Arcadia Bandeau</div>
+                                    <div class="item-price">$149.99</div>
+                                    <div class="item-size">Size: 12</div>
+                                    <div class="item-colour">Colour: Amazonia</div>
+                                </div>
                             </div>
+                            <!--EndOrder Summary Item-->
+
+                            <!--Start Order Summary Item-->
                             <div class="order-summary-item">
-                                here is an item
+                                <div class="order-summary-item-image">
+                                    <img
+                                            src="./images/swimweargalore/Costa_Del_Sol_Garden_Island_Fly_Away_Separate_Tankini_Top.jpg"
+                                            alt="Jets Arcadia Bandeau"
+                                    />
+                                </div>
+                                <div class="order-summary-item-info">
+                                    <div class="item-title">Costa Del Sol Garden Island Fly Away Separate Tankini Top</div>
+                                    <div class="item-price">$109.99</div>
+                                    <div class="item-size">Size: 16</div>
+                                </div>
                             </div>
+                            <!--EndOrder Summary Item-->
+
+                            <!--Start Order Summary Item-->
+                            <div class="order-summary-item">
+                                <div class="order-summary-item-image">
+                                    <img
+                                            src="./images/swimweargalore/Speedo_Mens_Avalon_Heritage_Watershort.jpg"
+                                            alt="Jets Arcadia Bandeau"
+                                    />
+                                </div>
+                                <div class="order-summary-item-info">
+                                    <div class="item-title">Speedo Mens Avalon Heritage Watershort</div>
+                                    <div class="item-price">$54.99</div>
+                                    <div class="item-size">Size: L</div>
+                                </div>
+                            </div>
+                            <!--EndOrder Summary Item-->
+
                         </div>
                     </div>
 
                     <div class="col-3 flex-grid-col" id="screen_3">
-                        <h3>
-                            <span class="screen-header">
-                               Unused
-                            </span>
-                        </h3>
                     </div>
 
                 </div>

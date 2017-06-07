@@ -10,6 +10,7 @@ Quickly get up and running with a JavaScript [ES6](https://es6.io) MVC Applicati
 - Example ES6 application you can extend
 - Holy grail 3 column flexbox layout
 - Easy, modular integration with any project
+- Koa 2 boilerplate Rest API
 
 #### Install & Start developing
 To get started as a developer, use your preferred command line application to change directory to your working folder and run the following commands.
@@ -29,6 +30,18 @@ sudo npm install http-server -g
 http-server
 ```
 Point your browser to http://127.0.0.1:8080 and your text editor to /__project-name__/src/ and start editing.
+
+
+## Node.js KOA API Server
+
+Using Koa we'll spin up a very minimal Node.js API to act as our bridging component for further integration.
+
+### Install and run API server
+
+```bash
+sudo npm install
+npm run api
+```
 
 #### Overrides
 A list of possible quick overrides to the Module that are available

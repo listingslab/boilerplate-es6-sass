@@ -1,19 +1,17 @@
-# koa2-boilerplate
+## Fake API for Boilerplate ES6 MVC App
 
-A minimal boilerplate of [koa v2](https://github.com/koajs/koa/issues/533).
+### Node.js KOA API Server
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
+Using Koa we'll spin up a very minimal Node.js API to act as our bridging component for further integration.
 
-## Installation
+### Install and run API server
 
-Both ways you can start:
+```bash
+sudo npm install
+npm run api
+```
 
-    fork this repo & git clone the repo
-    npm install koa2-boilerplate
-
-
-## Command
+### Command
 
 #### Setup
 
@@ -29,7 +27,7 @@ Both ways you can start:
 
 
 
-## Dependencies
+### Dependencies
 
 - Watcher and hot-reload: [nodemon](http://nodemon.io/)
 - Test:
@@ -43,19 +41,12 @@ Both ways you can start:
 - *Lint*:
     You can choose the lint tool that you prefer.
 
-## Reference
+### Reference
 
 - [koajs/koa#533](https://github.com/koajs/koa/issues/533)
 - [koajs/koa#596](https://github.com/koajs/koa/issues/596)
 
 
-## License
+### License
 
 MIT &copy; [GeekPlux](https://github.com/geekplux)
-
-
-
-[npm-image]: https://img.shields.io/npm/v/koa2-boilerplate.svg
-[npm-url]: https://npmjs.org/package/koa2-boilerplate
-[downloads-image]: https://img.shields.io/npm/dm/koa2-boilerplate.svg
-[downloads-url]: https://npmjs.org/package/koa2-boilerplate

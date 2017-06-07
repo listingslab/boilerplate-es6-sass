@@ -15,11 +15,41 @@
 
 #boilerplate {
   #order-summary {
-  }
 
-  .order-summary-item {
-    border: 1px solid $colour-border;
-    margin-bottom: 10px;
-    padding: 10px;
+    .order-summary-total {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .order-summary-item {
+      display: flex;
+      border: 1px solid $colour-border;
+      margin-bottom: 10px;
+      padding: 5px;
+
+      .order-summary-item-image {
+        flex: 1;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .order-summary-item-info {
+        flex: 1;
+        .item-title {
+          margin-top: 20px;
+          font-weight: bold;
+        }
+
+        .item-price {
+          margin-top: 5px;
+        }
+
+        .item-size {
+          margin-top: 25px;
+        }
+
+      }
+    }
   }
 }
