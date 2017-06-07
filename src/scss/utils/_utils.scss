@@ -21,7 +21,12 @@
 @import '../skins/swimweargalore/variables';
 
 #boilerplate {
+
   color: $colour-text;
+
+  .screens {
+    border: 1px dotted $colour-border;
+  }
 
   a {
     color: $colour-link;
@@ -44,8 +49,8 @@
   }
 
   #header {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
   }
 }

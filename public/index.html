@@ -42,25 +42,61 @@
             </script>
 
             <div id="header">
-                <h2>Swimwear Galore BetterCheckout Development</h2>
+                <h2>Swimwear Galore BetterCheckout</h2>
+                <div>
+                    You'll need to install and run the fake api.
+                </div>
             </div>
+            <div class="screens">
+                <div class="flex-grid">
 
-            <div class="flex-grid">
+                    <div class="col-2 flex-grid-col" id="screen_1">
+                        <h3>
+                            <span class="screen-header">
+                                First things first
+                            </span>
+                        </h3>
+                        <p>Please enter your email address to continue to delivery & payment</p>
+                        <label for="email">Email Address</label>
+                        <input
+                                id="email"
+                                name="email"
+                                type="text"
+                                class="input-text-field"
+                                placeholder="Type email"
+                        />
+                        <input
+                                id="input-submit-button"
+                                type="submit"
+                                class="input-submit"
+                        />
+                    </div>
 
-                <div class="col-2 flex-grid-col" id="screen_1">
-                    <h3>First things first</h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <div class="col-1 flex-grid-col" id="screen_2">
+                        <h3>
+                            <span class="screen-header">
+                               Order Summary
+                            </span>
+                        </h3>
+                        <div id="order-summary">
+                            <div class="order-summary-item">
+                                here is an item
+                            </div>
+                            <div class="order-summary-item">
+                                here is an item
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 flex-grid-col" id="screen_3">
+                        <h3>
+                            <span class="screen-header">
+                               Unused
+                            </span>
+                        </h3>
+                    </div>
+
                 </div>
-
-                <div class="col-1 flex-grid-col" id="screen_2">
-                    <h3>Order Summary</h3>
-                    Fusce at ultricies eros. Sed tincidunt ornare dolor, non euismod nulla pulvinar nec.
-                </div>
-
-                <div class="col-3 flex-grid-col" id="screen_3">
-
-                </div>
-
             </div>
 
             <div id="footer" />

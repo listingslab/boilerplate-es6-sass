@@ -7,11 +7,19 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <chris.dorward@aligent.com.au>
  *
- * src/scss/skins/swimweargalore/_swimweargalore.scss
- * Imports all the skin files
+ * src/scss/skins/swimweargalore/_font-size.scss
+ * Order Summary Screen
  *
  */
+@import '../variables';
 
-@import 'variables';
-@import 'typography';
-@import 'screens/order-summary';
+#boilerplate {
+  #order-summary {
+  }
+
+  .order-summary-item {
+    border: 1px solid $colour-border;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+}

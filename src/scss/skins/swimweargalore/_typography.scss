@@ -1,18 +1,11 @@
 /**
- * Boilerplate ES6 Sass App
+ * Swimwear Galore Better Ckeckout Skin
  *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
- *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
+ * @category   Aligent
+ * @package    swimweargalore
  * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
  *
  * src/scss/_font-size.scss
  * Typography
@@ -25,8 +18,14 @@
 #boilerplate {
   font-family: 'AvantGarde';
   font-size: $text-size;
+
+  .screen-header{
+    border-bottom: 2px solid $colour-headings-underline;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     color: $colour-headings;
+    text-align: center;
   }
   h1 {
     font-size: $h1-size;

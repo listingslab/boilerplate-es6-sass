@@ -1,18 +1,11 @@
 /**
- * Boilerplate ES6 Sass App
- *
- * NOTICE OF LICENSE
- *
- * This source file is subject to the Open Software License (OSL 3.0)
- * that is bundled with this package in the file LICENSE.txt.
- * It is also available through the world-wide-web at this URL:
- * https://opensource.org/licenses/osl-3.0.php
+ * Swimwear Galore Better Ckeckout Skin
  *
  * @category   Aligent
  * @package    swimweargalore
  * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
- * @author     Chris Dorward <listingslab@gmail.com>
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
  *
  * src/scss/skins/swimweargalore/_variables.scss
  * Manipulate project variables for swimweargalore
@@ -37,15 +30,15 @@
 $colour-brand: #46b5e5;
 $colour-brand-light: #46b5e5;
 $colour-brand-dark: #0058a1;
-
-$colour-text: #000000;
-$colour-headings: #46b5e5;
-
+$colour-text: #000;
+$colour-headings: #000;
+$colour-headings-underline: #46b5e5;
+$colour-border: #e3e4e6;
 $colour-link: $colour-brand-light;
 $colour-link-over: $colour-brand-dark;
 
 // Font Sizes
-$text-size: 1em;
+$text-size: 0.9em;
 $text-size-small: 0.6em;
 
 $h1-size: 1.6em;
