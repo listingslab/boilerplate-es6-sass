@@ -1,0 +1,48 @@
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_forms.scss
+ * Form inputs etc
+ *
+ */
+@import 'variables';
+
+#boilerplate {
+
+  .input-text-field {
+    border: 1px solid $colour-border;
+    border-radius: 3px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  input[type="text"]{
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+  }
+
+  input[type="submit"]{
+    border: 1px solid $colour-border;
+    background: $colour-button;
+    border-radius: 3px;
+    width: 100%;
+    padding: 25px;
+
+    color: $colour-white;
+    font-weight: bold;
+  }
+
+  input[type="submit"]:hover {
+    background: $colour-button-over;
+  }
+
+}

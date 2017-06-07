@@ -423,20 +423,22 @@ th {
  ____________________ */
 #boilerplate {
   color: #000; }
+  #boilerplate :focus {
+    outline: none; }
   #boilerplate a {
     color: #46b5e5;
     text-decoration: none;
     font-weight: bold; }
   #boilerplate a:hover {
     color: #0058a1; }
+  #boilerplate #header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px; }
   #boilerplate #footer {
     margin-top: 50px;
     text-align: center;
-    font-size: 0.6em; }
-  #boilerplate #header {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center; }
+    font-size: 0.7em; }
 
 /**
  * Boilerplate ES6 Sass App
@@ -500,6 +502,19 @@ th {
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <chris.dorward@aligent.com.au>
  *
+ * src/scss/skins/swimweargalore/_forms.scss
+ * Form inputs etc
+ *
+ */
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
  * src/scss/skins/swimweargalore/_variables.scss
  * Manipulate project variables for swimweargalore
  *
@@ -516,6 +531,31 @@ th {
   #000000 Black Text
   #ffffff White Text
  ____________________ */
+#boilerplate .input-text-field {
+  border: 1px solid #e3e4e6;
+  border-radius: 3px;
+  padding: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+#boilerplate input[type="text"] {
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 1.5em; }
+
+#boilerplate input[type="submit"] {
+  border: 1px solid #e3e4e6;
+  background: #0058a1;
+  border-radius: 3px;
+  width: 100%;
+  padding: 25px;
+  color: #fff;
+  font-weight: bold; }
+
+#boilerplate input[type="submit"]:hover {
+  background: #46b5e5; }
+
 /**
  * Swimwear Galore Better Ckeckout Skin
  *
@@ -566,9 +606,10 @@ th {
 
 #boilerplate {
   font-family: 'AvantGarde';
-  font-size: 0.9em; }
+  font-size: 1em; }
   #boilerplate .flex-grid-col .screen-title {
-    margin-bottom: 50px; }
+    margin-top: 25px;
+    margin-bottom: 25px; }
   #boilerplate .screen-header {
     border-bottom: 2px solid #46b5e5;
     padding-bottom: 5px; }
@@ -638,7 +679,8 @@ th {
   #boilerplate #order-summary .order-summary-item .order-summary-item-image {
     flex: 1; }
     #boilerplate #order-summary .order-summary-item .order-summary-item-image img {
-      max-width: 100%; }
+      max-height: 250px;
+      max-width: 75%; }
   #boilerplate #order-summary .order-summary-item .order-summary-item-info {
     flex: 1; }
     #boilerplate #order-summary .order-summary-item .order-summary-item-info .item-title {

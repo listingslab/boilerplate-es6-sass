@@ -24,8 +24,8 @@
 
   color: $colour-text;
 
-  .screens {
-    // border: 1px dotted $colour-border;
+  :focus {
+    outline:none;
   }
 
   a {
@@ -38,8 +38,11 @@
     color: $colour-link-over;
   }
 
-  .flex-grid-col {
-    // border: 1px solid green;
+
+  #header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
   }
 
   #footer {
@@ -48,9 +51,4 @@
     font-size: $text-size-small;
   }
 
-  #header {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-  }
 }
