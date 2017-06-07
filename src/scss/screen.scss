@@ -21,6 +21,7 @@
 
 @import 'utils/normalize';
 @import 'utils/utils';
+@import 'utils/layout';
 
-// Skin
-@import 'skins/swimweargalore/typography';
+// Load an existing or create a new skin
+@import 'skins/swimweargalore/swimweargalore';

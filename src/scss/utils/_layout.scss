@@ -14,38 +14,40 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_utils.scss
- * A few high level utility classes to apply to the #app div for use during development
+ * src/scss/utils/_layout.scss
+ * Layout using flexbox
  *
  */
-@import '../skins/swimweargalore/variables';
 
 #boilerplate {
-  color: $colour-text;
 
-  a {
-    color: $colour-link;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  a:hover {
-    color: $colour-link-over;
+  .flex-grid {
+    display: flex;
   }
 
   .flex-grid-col {
-    // border: 1px solid green;
+    flex: 1;
+    padding: 10px;
   }
 
-  #footer {
-    margin-top: 50px;
-    text-align: center;
-    font-size: $text-size-small;
+  .col-1 {
+    order: 0;
+  }
+  .col-2 {
+    order: 1;
   }
 
-  #header {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
+  .col-3 {
+    order: 2;
   }
+
+  @media (max-width: 1000px) {
+    .flex-grid {
+      display: block;
+    }
+
+  }
+
+
+
 }

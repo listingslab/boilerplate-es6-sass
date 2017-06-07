@@ -396,9 +396,140 @@ th {
  * A few high level utility classes to apply to the #app div for use during development
  *
  */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/skins/swimweargalore/_variables.scss
+ * Manipulate project variables for swimweargalore
+ *
+ */
+/* _________________
+ Swimwear Galore
+  #46b5e5 Main Light Blue Brand Colour
+  #0058a1 Main Dark Blue Brand Colour
+  #0058a1 Button BG
+  #e9e9e9 Total Panel BG
+  #f5f5f5 Bottom Panel BG
+  #3db3e6 Bottom Panel BG Blue Heading
+  #e3e4e6 Grey Border
+  #000000 Black Text
+  #ffffff White Text
+ ____________________ */
 #boilerplate {
-  border: 1px solid green; }
+  color: #000000; }
+  #boilerplate a {
+    color: #46b5e5;
+    text-decoration: none;
+    font-weight: bold; }
+  #boilerplate a:hover {
+    color: #0058a1; }
+  #boilerplate #footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.6em; }
+  #boilerplate #header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center; }
 
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Listingslab
+ * @package    boilerplate-es6-sass
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/utils/_layout.scss
+ * Layout using flexbox
+ *
+ */
+#boilerplate .flex-grid {
+  display: flex; }
+
+#boilerplate .flex-grid-col {
+  flex: 1;
+  padding: 10px; }
+
+#boilerplate .col-1 {
+  order: 0; }
+
+#boilerplate .col-2 {
+  order: 1; }
+
+#boilerplate .col-3 {
+  order: 2; }
+
+@media (max-width: 1000px) {
+  #boilerplate .flex-grid {
+    display: block; } }
+
+/**
+ * Swimwear Galore Better Ckeckout Skin
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <chris.dorward@aligent.com.au>
+ *
+ * src/scss/skins/swimweargalore/_swimweargalore.scss
+ * Imports all the skin files
+ *
+ */
+/**
+ * Boilerplate ES6 Sass App
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/osl-3.0.php
+ *
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
+ * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author     Chris Dorward <listingslab@gmail.com>
+ *
+ * src/scss/skins/swimweargalore/_variables.scss
+ * Manipulate project variables for swimweargalore
+ *
+ */
+/* _________________
+ Swimwear Galore
+  #46b5e5 Main Light Blue Brand Colour
+  #0058a1 Main Dark Blue Brand Colour
+  #0058a1 Button BG
+  #e9e9e9 Total Panel BG
+  #f5f5f5 Bottom Panel BG
+  #3db3e6 Bottom Panel BG Blue Heading
+  #e3e4e6 Grey Border
+  #000000 Black Text
+  #ffffff White Text
+ ____________________ */
 /**
  * Boilerplate ES6 Sass App
  *
@@ -439,6 +570,18 @@ th {
  * Manipulate project variables for swimweargalore
  *
  */
+/* _________________
+ Swimwear Galore
+  #46b5e5 Main Light Blue Brand Colour
+  #0058a1 Main Dark Blue Brand Colour
+  #0058a1 Button BG
+  #e9e9e9 Total Panel BG
+  #f5f5f5 Bottom Panel BG
+  #3db3e6 Bottom Panel BG Blue Heading
+  #e3e4e6 Grey Border
+  #000000 Black Text
+  #ffffff White Text
+ ____________________ */
 /*
     fontface mixin from https://github.com/magnetikonline/sassboilerplate/blob/master/fontface.scss
  */
@@ -452,6 +595,8 @@ th {
 #boilerplate {
   font-family: 'AvantGarde';
   font-size: 1em; }
+  #boilerplate h1, #boilerplate h2, #boilerplate h3, #boilerplate h4, #boilerplate h5, #boilerplate h6 {
+    color: #46b5e5; }
   #boilerplate h1 {
     font-size: 1.6em; }
   #boilerplate h2 {

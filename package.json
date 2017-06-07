@@ -1,6 +1,6 @@
 {
   "name": "boilerplate-es6-sass",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Boilerplate JavaScript ES6 MVC Application (with Sass)",
   "main": "src/js/Main.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/listingslab/boilerplate-es6-sass.git"
+    "url": "https://github.com/listingslab/boilerplate-es6-sass"
   },
   "license": "OSL-3.0",
   "author": {
