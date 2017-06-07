@@ -8,19 +8,23 @@
  * It is also available through the world-wide-web at this URL:
  * https://opensource.org/licenses/osl-3.0.php
  *
- * @category   Listingslab
- * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @category   Aligent
+ * @package    swimweargalore
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_email-capture.scss
- * Email Capture Screen
+ * src/scss/skins/swimweargalore/_variables.scss
+ * Manipulate project variables for swimweargalore
  *
  */
 
-#app{
-  #email-capture{
-    text-align: center;
-  }
-}
+// Font Sizes
+$text-size: 1em;
+
+$h1-size: 1.6em;
+$h2-size: 1.4em;
+$h3-size: 1.2em;
+$h4-size: 1.0em;
+$h5-size: 0.8em;
+$h6-size: 0.6em;

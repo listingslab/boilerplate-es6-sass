@@ -10,28 +10,11 @@
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_input-Submit.scss
- * How to style a submit input field
+ * src/scss/_partial.scss
+ * Partial chunks template
  *
  */
-@import 'variables';
-
-#app{
-  .input-submit {
-    background: $color-button-bg;
-    color: $color-button-text;
-    border: $ui-border-thickness solid $ui-border;
-    border-radius: $ui-border-radius;
-    box-shadow: $ui-dropshadow;
-    padding:2%;
-    width: 100%;
-    font-weight: bold;
-    a {
-      color: red;
-    }
-  }
-}

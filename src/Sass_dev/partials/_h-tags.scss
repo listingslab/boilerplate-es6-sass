@@ -10,38 +10,27 @@
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_layout.scss
- * Layout
+ * src/scss/_h-tags.scss
+ * How to style H Tags
  *
  */
+@import 'variables';
 
-.layout-col {
-  // border: 1px dotted orange;
-}
+#app{
+  h1 {
+    font-size: 18px;
 
-.layout,
-.layout-app {
-  display: flex;
-  flex-direction: column;
-}
-
-.layout-controller {
-  order: -1;
-}
-
-@media (min-width: 768px) {
-  .layout-app {
-    flex-direction: row;
-    flex: 1;
   }
-  .layout-content {
-    flex: 1;
+  h2 {
+    font-size: 16px;
   }
-  .layout-model, .layout-controller {
-    flex: 0 0 33.2%;
+  h3 {
+    font-size: 14px;
   }
+
 }
+

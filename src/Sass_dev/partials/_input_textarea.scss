@@ -10,16 +10,21 @@
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_font-size.scss
- * Typography
+ * src/scss/_input-textarea.scss
+ * How to style a textarea input field
  *
  */
 @import 'variables';
 
-#app {
+textarea{
+  width: 80%;
+  height: 200px;
+  border: none;
+  background: none;
+  text-wrap: normal;
   color: $color-app-text;
 }

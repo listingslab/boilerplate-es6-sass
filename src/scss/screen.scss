@@ -10,7 +10,7 @@
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
@@ -18,51 +18,9 @@
  * Main Sass entry point
  *
  */
-@import 'normalize';
-@import 'variables';
 
-@import 'layout';
+@import 'utils/normalize';
+@import 'utils/utils';
 
-@import 'partials/h-tags';
-@import 'partials/input_submit';
-@import 'partials/input_text';
-@import 'partials/input_textarea';
-
-
-@import 'screens/email-capture';
-@import 'screens/order-summary';
-
-/* Typography */
-@import 'mixins/fontface';
-@include fontFace('AvantGarde','../fonts/itc_avant_garde_gothic_book-webfont');
-@import 'partials/typography';
-/* End Typography */
-
-#app{
-
-  margin-top:50px;
-
-  :focus {
-    outline:none;
-  }
-  .pad-25-top{
-    margin-top: 25px;
-  }
-
-  .boldify{
-    font-weight: bold;
-    color: $color-brand-main;
-  }
-
-  .align-left{
-    text-align: left;
-  }
-
-  #debugger {
-    // visibility: hidden;
-  }
-
-  .screen-heading{
-    border-bottom:1px solid $color-brand-main;
-  }
-}
+// Skin
+@import 'skins/swimweargalore/typography';

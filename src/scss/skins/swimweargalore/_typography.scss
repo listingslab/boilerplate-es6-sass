@@ -14,30 +14,33 @@
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/js/View.js
- * Handles everything to do with displaying, logging or rendering
+ * src/scss/_font-size.scss
+ * Typography
  *
  */
+@import 'variables';
+@import '../../mixins/fontface';
+@include fontFace('AvantGarde','../fonts/itc_avant_garde_gothic_book-webfont');
 
-export default class View {
-  constructor(main) {
-    this.main = main;
-    this.shortName = 'v';
-    this.showOutput ($('#output-model'), 'broken' )
+#boilerplate {
+  font-family: 'AvantGarde';
+  font-size: $text-size;
+  h1 {
+    font-size: $h1-size;
   }
-
-  setDependents(dependents) {
-    for (let i=0; i<dependents.length; i++){
-      this[dependents[i].shortName] = dependents[i];
-    }
+  h2 {
+    font-size: $h2-size;
   }
-
-  showOutput (target, html){
-    target.html(html);
+  h3 {
+    font-size: $h3-size;
   }
-
-  focusTextField (inputTextID){
-    inputTextID.focus();
+  h4 {
+    font-size: $h4-size;
   }
-
+  h5 {
+    font-size: $h5-size;
+  }
+  h6 {
+    font-size: $h6-size;
+  }
 }

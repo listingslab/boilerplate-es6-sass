@@ -10,27 +10,24 @@
  *
  * @category   Listingslab
  * @package    boilerplate-es6-sass
- * @copyright  Copyright (c) 2017 Listingslab (http://listingslab.com)
+ * @copyright  Copyright (c) 2017 Listingslab (https://github.com/listingslab/boilerplate-es6-sass)
  * @license    https://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @author     Chris Dorward <listingslab@gmail.com>
  *
- * src/scss/_h-tags.scss
- * How to style H Tags
+ * src/scss/_order-summary.scss
+ * Order Summary Screen
  *
  */
-@import 'variables';
 
 #app{
-  h1 {
-    font-size: 18px;
-
+  #order-summary{
+    text-align: center;
+    .item-number-display{
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+    #items, #item-number{
+      text-align: left;
+    }
   }
-  h2 {
-    font-size: 16px;
-  }
-  h3 {
-    font-size: 14px;
-  }
-
 }
-
